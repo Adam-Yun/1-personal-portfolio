@@ -168,6 +168,15 @@ section{
 
 }
 
+.project-container{
+    margin-top: 20%;
+    width:33%;
+    height:80%;
+
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
 .section-container-4{
     display: flex;
     justify-content: center;
