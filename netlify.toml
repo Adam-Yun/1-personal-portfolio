@@ -1,2 +1,2 @@
 [build]
-publish = "dist/portfolio/personal-portfolio"
+publish = "portfolio/personal-portfolio/dist"
