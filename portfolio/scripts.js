@@ -16,8 +16,12 @@ function toggleNav() {
   }
   
 function callIg(){
+  // Need to change this smId to smIg
+    const smId = document.getElementById('igId');
+    const smFb = document.getElementById('fbId');
+    const smEm = document.getElementById('emId');
+    const smPn = document.getElementById('pnId');
 
-    const smId = document.getElementById('igId')
     const curtains = document.getElementById('curtains');
     const curtain = curtains.getElementsByTagName('div');
 
