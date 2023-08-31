@@ -2,10 +2,7 @@
     margin-top:10vh;
     width:100%;
     /* remember to set this height relative to the children */
-    height:100vh;
-
-    box-sizing: border-box;
-    border: 1px solid red;
+    height:min-content;
 
     display:flex;
     flex-direction: column;
@@ -17,9 +14,166 @@
 
 section{
     width:100%;
-    height:50%;
     
     box-sizing: border-box;
-    border:1px solid orange;
 }
+
+.introduction-box, .contact-box{
+    height:50vh;
+    border:1px solid red;
+}
+
+.project-box{
+    height:min-content;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;        
+}
+
+.project{
+    position:relative;
+    width:100%;
+    height:50vh;
+
+    /* box-sizing: border-box;
+    border: 1px solid purple; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card{
+
+    width:325px;
+    height:45vh;
+
+    box-sizing: border-box;
+    border: 10px solid #FBFAF5;
+    background-color: #FBFAF5;
+
+    border-radius: 10px;
+}
+
+.contact-box{
+    border:none;
+}
+
+
+.contact-tigo{
+    width:100%;
+    height:50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-title{
+    width:100%;
+    height:50%;
+    font-size: 24px;
+
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-logo{
+    width:100%;
+    height:50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-logo i{
+    font-size: 32px;
+    color:white;
+    margin:0 auto;
+}
+
+.contact-info{
+    position: relative;
+    width:100%;
+    height:50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-curtains-left, .contact-curtains-right{
+    width:50%;
+    height:100%;
+    
+    box-sizing: border-box;
+    border:1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: width 0.5s ease-in-out;
+}
+
+.contact-curtains-left{
+    margin-right: auto;
+}
+
+.contact-curtains-right{
+    margin-left: auto;
+}
+
+.contact-curtains-left.active{
+    margin-right: auto;
+    width:10%
+}
+
+.contact-curtains-right.active{
+    margin-left: auto;
+    width:10%;
+}
+
+.ig,.fb,.em,.pn{
+    position:absolute;
+    width: 75%;
+    height: 20%;
+
+    box-sizing: border-box;
+    border: 1px solid greenyellow;
+
+    color:white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity:0;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ig.active{
+    opacity: 1;
+}
+
+.fb.active{
+    opacity: 1;
+}
+
+.em.active{
+    opacity: 1;
+}
+
+.pn.active{
+    opacity: 1;
+}
+
 
