@@ -18,11 +18,7 @@ function toggleNav() {
 function callIg(){
   // Need to change this smId to smIg
     const smId = document.getElementById('igId');
-    const smFb = document.getElementById('fbId');
-    const smEm = document.getElementById('emId');
-    const smPn = document.getElementById('pnId');
-
-    const curtains = document.getElementById('curtains');
+    const curtains = document.getElementById('curtainsIg');
     const curtain = curtains.getElementsByTagName('div');
 
     for(let i=0; i<=curtain.length-1; i++){
@@ -37,7 +33,7 @@ function callIg(){
 function callFb(){
 
   const smId = document.getElementById('fbId')
-  const curtains = document.getElementById('curtains');
+  const curtains = document.getElementById('curtainsFb');
   const curtain = curtains.getElementsByTagName('div');
 
   for(let i=0; i<=curtain.length-1; i++){
@@ -52,7 +48,7 @@ function callFb(){
 function callEm(){
 
   const smId = document.getElementById('emId')
-  const curtains = document.getElementById('curtains');
+  const curtains = document.getElementById('curtainsEm');
   const curtain = curtains.getElementsByTagName('div');
 
   for(let i=0; i<=curtain.length-1; i++){
@@ -67,7 +63,7 @@ function callEm(){
 function callPn(){
 
   const smId = document.getElementById('pnId')
-  const curtains = document.getElementById('curtains');
+  const curtains = document.getElementById('curtainsPn');
   const curtain = curtains.getElementsByTagName('div');
 
   for(let i=0; i<=curtain.length-1; i++){
