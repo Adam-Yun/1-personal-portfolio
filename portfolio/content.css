@@ -37,7 +37,7 @@ section{
 .personal-image-container{
     position: relative;
     width:100%;
-    height:50%;
+    height:45%;
 
     display: flex;
     justify-content: center;
@@ -67,10 +67,7 @@ section{
 
 .personal-description{
     width:100%;
-    height:50%;
-
-    /* box-sizing: border-box;
-    border:1px solid red; */
+    height:55%;
 
     display: flex;
     justify-content: center;
@@ -79,15 +76,15 @@ section{
 
 .description-box{
     width:90%;
-    height:90%;
-
-    /* box-sizing: border-box;
-    border:1px solid red; */
+    height:100%;
 
     background-color: rgba(51, 51, 51, 0.4);
     border-radius: 10px;
 
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .description-box p{
@@ -114,12 +111,12 @@ section{
 }
 
 .project-card{
-    width:325px;
-    height:45vh;
+    width:225px;
+    height:35vh;
 
     box-sizing: border-box;
-    border: 10px solid #FBFAF5;
-    background-color: #DDD;
+    border: 10px solid #333;
+    background-color: #222;
 
     border-radius: 10px;
 }
