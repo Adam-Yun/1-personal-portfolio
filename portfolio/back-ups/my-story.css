@@ -3,8 +3,8 @@
     width:100%;
     height:min-content;
 
-    /* box-sizing: border-box;
-    border:1px solid red; */
+    box-sizing: border-box;
+    border:1px solid red;
 
     display: flex;
     flex-direction: column;
@@ -16,8 +16,8 @@
     width:100%;
     height: 100%;
 
-    /* box-sizing: border-box;
-    border: 1px solid plum; */
+    box-sizing: border-box;
+    border: 1px solid plum;
 
     display: flex;
     flex-direction: row;
@@ -28,8 +28,8 @@
 .flag-container{
     width: 20%;
     height:50vh;
-/* 
-    box-sizing: border-box;
+
+    /* box-sizing: border-box;
     border: 1px solid plum; */
 
     display: flex;
@@ -37,66 +37,38 @@
     align-items: center;
 }
 
+.flag-story:last-child .story-container{
+    display: none;
+}
+
 .pole{
+    position: relative;
     width:0;
     height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.year{
-    position: relative;
-    width:auto;
-    height:auto;
-    padding:10px;
-    margin-bottom:20px;
-    border-radius: 10px;
-    
-    background-color: #222;
+    box-sizing: border-box;
+    border:1px solid lightslategray;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.triangle{
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin-top:90%;
-
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid #222;
-}
-
-.year p{
-    margin:0;
-    padding:0;
-    font-weight: bold;
-
-    color:whitesmoke;
 }
 
 .flag{
+    position: fixed;
     width:50px;
     height:50px;
-    margin: 0 0 50px 0;
+    z-index: 1;
 
-    border:2.5px solid #222;
-    border-radius: 50%;
+    transition: opacity 1s ease;
 }
 
 .story-container{
     width:80%;
     height:50vh; 
-/* 
-    box-sizing: border-box;
-    border:1px solid red; */
+
+    /* box-sizing: border-box;
+    border: 1px solid yellowgreen; */
 
     display: flex;
     justify-content: center;

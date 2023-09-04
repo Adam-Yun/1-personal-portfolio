@@ -12,17 +12,87 @@
     background-color: #222;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
 section{
     width:100%;
     
     box-sizing: border-box;
 }
 
-.introduction-box, .contact-box{
+.introduction-box{
+    position: relative;
     height:50vh;
-    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-image-container{
+    position: relative;
+    width:100%;
+    height:50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.personal-image{
+    width:auto;
+    height:80%;
+    margin: auto 0;
+
     box-sizing: border-box;
-    border:1px solid red;
+    border:5px solid #444;
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.personal-image img{
+    max-width: 100%;
+    max-height: 180%;
+}
+
+.personal-description{
+    width:100%;
+    height:50%;
+
+    /* box-sizing: border-box;
+    border:1px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-box{
+    width:90%;
+    height:90%;
+
+    /* box-sizing: border-box;
+    border:1px solid red; */
+
+    background-color: rgba(51, 51, 51, 0.4);
+    border-radius: 10px;
+
+    overflow-y: scroll;
+}
+
+.description-box p{
+    color:white;
+    margin: 10px;
 }
 
 .project-box{
@@ -55,7 +125,7 @@ section{
 }
 
 .contact-box{
-    border:none;
+    height:50vh;
 }
 
 
@@ -89,10 +159,18 @@ section{
     align-items: flex-start;
 }
 
-.contact-logo i{
+.logo-click{
+    margin:0 auto;
+}
+
+.logo-click i{
     font-size: 32px;
     color:white;
-    margin:0 auto;
+}
+
+.logo-click i:hover{
+    color:#AAA;
+    cursor: pointer;
 }
 
 .contact-info{
@@ -168,20 +246,15 @@ section{
     transition: opacity 0.5s ease-in-out;
 }
 
-.ig.active{
+.ig.active, .fb.active, .em.active, .pn.active{
     opacity: 1;
 }
 
-.fb.active{
-    opacity: 1;
+.id-info i{
+    text-align: left;
 }
 
-.em.active{
-    opacity: 1;
-}
 
-.pn.active{
-    opacity: 1;
-}
+
 
 
