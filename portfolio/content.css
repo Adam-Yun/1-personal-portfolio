@@ -26,7 +26,7 @@ section{
 
 .introduction-box{
     position: relative;
-    height:50vh;
+    height:70vh;
 
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ section{
 
 .project-card{
     width:225px;
-    height:35vh;
+    height:270px;
 
     box-sizing: border-box;
     border: 10px solid #333;
