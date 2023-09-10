@@ -1,8 +1,234 @@
 *{
     margin:0;
     padding:0;
+
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica;
+    color:whitesmoke;
 }
 
 body{
-    background-color:#555;
+    width:100%;
+    /* Increases dynamically as website content increases in vh */
+    height:min-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color:#202732    ;
+}
+
+/*  main structure of the website content*/
+header{
+    width:100%;
+    height:10vh;
+
+    background-color: #1c222c;
+
+    box-sizing: border-box;
+    border:1px solid whitesmoke;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main{
+    width:100%;
+    /* Increases dynamically as section content increases in vh */
+    height:min-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width:100%;
+    height:10vh;
+
+    background-color: #1c222c;
+
+    box-sizing: border-box;
+    border:1px solid whitesmoke ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* head's content structure */
+
+header p, header h2,header nav{
+    width:auto;
+    height:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p, header nav{
+    width:80px;
+}
+
+header p{
+    font-weight:bold;
+    text-align: center;
+}
+
+header h2{
+    width:100%;
+
+    box-sizing: border-box;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+
+    font-weight:normal;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 3px;
+}
+
+/* main's content structure */
+section{
+    width:100%;
+    height:50vh;
+}
+
+.introduction-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-container{
+    width:80%;
+    height:80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* project section */
+
+.project-section{
+    /* Increases dynamically as each project is added or increases in vh */
+    height:min-content;
+
+    border:none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 601px){
+    .project-section{
+        flex-direction: row;
+    }
+}
+
+.project-title, .project-more{
+    width:100%;
+    height:10vh;
+
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-more a{
+    text-decoration: none;
+}
+
+.project-title p:hover, .project-more a:hover{
+    color:grey;
+}
+
+/* project structure */
+.project-container{
+    width:100%;
+    height:50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card{
+    position:relative;
+    width: 250px;
+    height: 300px;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    border: 1px solid black;
+
+    overflow: hidden;
+}
+
+
+.project-card-title-bg{
+    position:absolute;
+    width:100%;
+    height:50px;
+
+    background-color: black;
+    opacity: 0.6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card-title{
+    font-size: 18px;
+    font-weight: bold;
+
+    color:#39FF14;
+}
+
+.project-preview-container{
+    width:100%;
+    height:50%;
+
+    box-sizing: border-box;
+    border-bottom:1px solid black;
+}
+
+.project-preview{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* Footer's content structure */
+footer p{
+    font-size:12px;
+    text-align: center;
+}
+
+@media (min-width: 481px){
+    footer p{
+        font-size:18px;
+    }
+}
+
+@media (min-width: 601px){
+    footer p{
+        font-size:22px;
+    }
 }
