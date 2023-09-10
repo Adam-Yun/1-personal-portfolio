@@ -148,12 +148,18 @@ section{
     align-items: center;
 }
 
+.project-title p, .project-more a{
+    color:#39FF14;
+}
+
 .project-more a{
     text-decoration: none;
 }
 
 .project-title p:hover, .project-more a:hover{
-    color:grey;
+    color:orange;
+    font-size:24.5px;
+    cursor: pointer;
 }
 
 /* project structure */
@@ -179,14 +185,13 @@ section{
     overflow: hidden;
 }
 
-
+/* Project Title */
 .project-card-title-bg{
     position:absolute;
     width:100%;
     height:50px;
 
-    background-color: black;
-    opacity: 0.6;
+    background-color: rgba(0,0,0,0.6);
 
     display: flex;
     justify-content: center;
@@ -194,12 +199,13 @@ section{
 }
 
 .project-card-title{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 
     color:#39FF14;
 }
 
+/* Project Images */
 .project-preview-container{
     width:100%;
     height:50%;
@@ -213,6 +219,27 @@ section{
     height:100%;
 
     object-fit:cover;
+}
+
+/* Porject Description */
+.project-description-container{
+    width:100%;
+    height:50%;
+
+    /* box-sizing: border-box;
+    border:1px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-description{
+    font-size:12.5px;
+    text-align: left;
+    margin: 10px 10px 0 10px;
+
+    color:whitesmoke;
 }
 
 /* Footer's content structure */
