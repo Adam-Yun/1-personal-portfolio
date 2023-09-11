@@ -179,18 +179,66 @@ section{
 }
 
 .introduction-section{
+    height:40vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* box-sizing: border-box;
+    border:1px solid red; */
+}
+
+.introduction-profile{
+    width: 80%;
+    height:40%;
+
+    /* box-sizing: border-box;
+    border:1px solid red; */
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.profile{
+    width:100px;
+    height:100px;
+
+    box-sizing: border-box;
+    border:1px solid whitesmoke;
+
+    object-fit:cover;
+    border-radius: 100%;
+
+    overflow: hidden;
+}
+
+@media (min-width: 601px){
+    .profile{
+        width:130px;
+        height:130px;
+    }
 }
 
 .introduction-container{
     width:80%;
-    height:80%;
+    height:50%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* box-sizing: border-box;
+    border:1px solid red; */
+
+    font-size:14px;
+}
+
+@media (min-width: 601px){
+    .introduction-container{
+        font-size:24px;
+    }
 }
 
 /* project's section structure */
@@ -339,14 +387,14 @@ section{
     align-items: center;
 }
 
-.contact-section i{
+.contact-section a{
     margin:0 auto 0 auto;
     font-size: 42px;
 
     color:whitesmoke;
 }
 
-.contact-section i:hover{
+.contact-section a i:hover{
     color:#39FF14;
     cursor: pointer;
 }
