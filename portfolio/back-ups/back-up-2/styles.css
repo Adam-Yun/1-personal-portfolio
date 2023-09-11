@@ -89,7 +89,6 @@ body{
     align-items: center;
 
     transition: left 0.5s ease-in-out;    
-
 }
 
 .individual-link.active{

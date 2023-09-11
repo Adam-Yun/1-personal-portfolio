@@ -5,21 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
   <title>Adam Yun</title>
+
+  <!-- API's -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 <body>
     <!-- Everything inside body is content structure -->
     <header>
         <p>AY&#40;&#41;;</p>
-        <h2> My Portfolio</h2>
-        <nav>
-            <div class="burger">
+        <h2>My Portfolio</h2>
+        <div class="burger-container">
+            <div class="burger" onclick="toggleNavbar()">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
               </div>
+        </div>
+        <!-- try to make background blur as the burger is clicked -->
+        <nav class="nav-links-container">
+            <ul id='ulLinksContainer' class="ul-links-container">
+                <div id="divLinkBox" class="div-link-box one">
+                    <li>
+                        <a class="a-link" href="index.html" onclick="toggleNavbar()">
+                            Home
+                        </a>
+                    </li>
+                </div>
+
+                <div id="divLinkBox" class="div-link-box two">
+                    <li>
+                        <a class="a-link" href="#projectTitle" onclick="toggleNavbar()">
+                            Project
+                        </a>
+                    </li>
+                </div>
+
+                <div id="divLinkBox" class="div-link-box three">
+                    <li>
+                        <a class="a-link" href="#contactSection" onclick="toggleNavbar()">
+                            Contact
+                        </a>
+                    </li>
+                </div>
+            </ul>
         </nav>
+
     </header>
+
     <main>
         
         <!-- Introduction -->
@@ -35,7 +68,7 @@
         </section>
 
         <!-- main content which are projects -->
-        <div class="project-title">
+        <div id="projectTitle" class="project-title">
             <p>Projects;</p>
         </div>
         <section class="project-section">
@@ -61,7 +94,7 @@
             <div class="project-container">
                 <div class="project-card">
                     <div class="project-card-title-bg">
-                        <p class="project-card-title">Project X;</p>
+                        <p class="project-card-title">Project Y;</p>
                     </div>
                     <div class="project-preview-container">
                         <img class="project-preview" src="images/example-img/tiktok.jpg">
@@ -79,7 +112,7 @@
             <div class="project-container">
                 <div class="project-card">
                     <div class="project-card-title-bg">
-                        <p class="project-card-title">Project X;</p>
+                        <p class="project-card-title">Project Z;</p>
                     </div>
                     <div class="project-preview-container">
                         <img class="project-preview" src="images/example-img/netflix.jpg">
@@ -100,7 +133,16 @@
         </div>
 
         <!-- content for contacts -->
-        <section class="contact-section"></section>
+        <!-- Linkedin, email, instagram, github -->
+        <section id="contactSection" class="contact-section">
+            <div class="contact-logo-container">
+                <i class="fa fa-linkedin-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-github-square"></i>
+            </div>
+            <!-- <div class="contact-info-container"></div> -->
+        </section>
 
     </main>
     <footer>

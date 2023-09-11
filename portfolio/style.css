@@ -4,6 +4,12 @@
 
     font-family: 'Courier New', Courier, monospace, Arial, Helvetica;
     color:whitesmoke;
+}   
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
 }
 
 body{
@@ -59,9 +65,8 @@ footer{
     align-items: center;
 }
 
-/* head's content structure */
-
-header p, header h2,header nav{
+/* header's content structure */
+header p, header h2, .burger-container{
     width:auto;
     height:100%;
 
@@ -70,7 +75,7 @@ header p, header h2,header nav{
     align-items: center;
 }
 
-header p, header nav{
+header p, .burger-container{
     width:80px;
 }
 
@@ -89,11 +94,82 @@ header h2{
     font-weight:normal;
 }
 
+.burger:hover{
+    cursor: pointer;
+}
+
 .line1, .line2, .line3 {
     width: 25px;
     height: 3px;
     background-color: whitesmoke;
     margin: 3px;
+}
+
+.nav-links-container{
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+    position: absolute;
+    width: 180px;
+    height: 300px;
+
+    margin: 10vh 0 0 auto;
+}
+
+.ul-links-container{
+    position: relative;
+    width: 100%;
+    height:100%;
+
+    list-style: none;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-link-box{
+    width:100%;
+    height: 33.3333%;
+    margin-left:200vw;
+
+    background-color: #202732;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    transition: margin-left 0.5s ease-in-out 0.1s;
+}
+.two{
+    transition: margin-left 0.5s ease-in-out 0.2s;
+}
+.three{
+    transition: margin-left 0.5s ease-in-out 0.3s;
+}
+
+.one.active{
+    margin-left: 0;
+}
+
+.two.active{
+    margin-left: 0;
+}
+
+.three.active{
+    margin-left: 0;
+}
+
+.a-link{
+    font-size: 24px;
+    text-decoration: none;
 }
 
 /* main's content structure */
@@ -117,8 +193,7 @@ section{
     align-items: center;
 }
 
-/* project section */
-
+/* project's section structure */
 .project-section{
     /* Increases dynamically as each project is added or increases in vh */
     height:min-content;
@@ -153,12 +228,13 @@ section{
 }
 
 .project-more a{
+    font-size:18px;
     text-decoration: none;
 }
 
-.project-title p:hover, .project-more a:hover{
+.project-more a:hover{
     color:orange;
-    font-size:24.5px;
+    font-size:18.5px;
     cursor: pointer;
 }
 
@@ -183,6 +259,11 @@ section{
     border: 1px solid black;
 
     overflow: hidden;
+}
+
+.project-card:hover{
+    filter: brightness(180%);
+    cursor: pointer;
 }
 
 /* Project Title */
@@ -221,7 +302,7 @@ section{
     object-fit:cover;
 }
 
-/* Porject Description */
+/* Project Description */
 .project-description-container{
     width:100%;
     height:50%;
@@ -237,6 +318,37 @@ section{
     margin: 10px 10px 0 10px;
 
     color:whitesmoke;
+}
+
+/* contact's section structure */
+.contact-section{
+    height:30vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-logo-container{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section i{
+    margin:0 auto 0 auto;
+    font-size: 42px;
+
+    color:whitesmoke;
+}
+
+.contact-section i:hover{
+    color:#39FF14;
+    cursor: pointer;
 }
 
 /* Footer's content structure */
