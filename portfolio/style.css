@@ -190,11 +190,10 @@ section{
 }
 
 .introduction-profile{
+    margin-top:2.5%;
+    margin-bottom:0.5%;
     width: 80%;
-    height:40%;
-
-    /* box-sizing: border-box;
-    border:1px solid red; */
+    height:50%;
 
     display: flex;
     justify-content:center;
