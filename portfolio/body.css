@@ -5,7 +5,7 @@
     padding:0;
 
     font-family:Arial, Helvetica, sans-serif;
-    color: #e2fff5;
+    color: #acccc0;
 }  
 
 /* set main background which is body to be a certain color */
@@ -22,12 +22,17 @@ header{
     height:10vh;
 
     box-sizing: border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 main{
     width:100%;
     height:min-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
@@ -35,7 +40,7 @@ footer{
     height:10vh;
 
     box-sizing: border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
     
     display: flex;
     justify-content: center;
