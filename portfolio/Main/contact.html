@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="../styles/navbar.css">
-  <link rel="stylesheet" href="../styles/project.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <title>Adam Yun</title>
 
   <!-- API's -->
@@ -14,7 +14,9 @@
 <body>
     <header>
     </header>
+
     <main>
+
       <!-- Load Navbar HTML -->
       <div id="navbarContainer"></div>
 
@@ -22,7 +24,7 @@
         <div class="main-content-ctn">
           <div class="main-content">
             <p>
-              PROJECT
+              CONTACT
             </p>
           </div>
         </div>
@@ -32,6 +34,21 @@
     <footer>
     </footer>
 
-  <script src="../functions/script.js"></script>
+  <script src="functions/navbar.js"></script>
+
 </body>
+
 </html>
+
+
+<!-- 
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        prevMap = {}  # val -> index
+
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
+ -->

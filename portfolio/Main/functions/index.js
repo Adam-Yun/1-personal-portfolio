@@ -1,21 +1,3 @@
-// script.js
-document.addEventListener("DOMContentLoaded", function () {
-    // Function to include navbar
-    function includeNavbar() {
-      fetch("../templates/navbar.html")
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById("navbarContainer").innerHTML = html;
-        })
-        .catch(error => {
-          console.error("Error fetching navbar:", error);
-        });
-    }
-  
-    // Call the function to include navbar
-    includeNavbar();
-  });
-
 // Function to check screen width and set justify-content property
 function adjustJustifyContent() {
     // Get the screen width
