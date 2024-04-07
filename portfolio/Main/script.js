@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Function to include navbar
     function includeNavbar() {
-      fetch("Main/navbar.html")
+      fetch("navbar.html")
         .then(response => response.text())
         .then(html => {
           document.getElementById("navbarContainer").innerHTML = html;
