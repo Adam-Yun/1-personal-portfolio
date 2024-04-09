@@ -7,7 +7,6 @@
     z-index: 1;
     /* padding-right: 10px; */
 
-
     display:flex;
     justify-content: right;
     align-items: center;
@@ -18,7 +17,7 @@
 }
 
 .main-nav-bar-section{
-    width:20%;
+    width:min-content;
     height:100%;
     margin: 0px 10px 0px 10px;
     font-size: 24px;
@@ -97,6 +96,6 @@
       }
 
       .main-nav-bar-ctn{
-        padding: 40px 20px 36.5px 0px;
+        padding: 40px 10px 36.5px 0px;
     }
 }

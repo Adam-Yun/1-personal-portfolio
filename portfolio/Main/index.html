@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/project.css">
+
   <title>Adam Yun</title>
 
   <!-- API's -->
@@ -23,7 +25,7 @@
       <!-- MAIN CONTENT -->
         <div class="main-ctn">
 
-          <div class="main-content-ctn" style="background-color:rgb(34, 34, 34);">
+          <div id="introduction" class="main-content-ctn" style="background-color:rgb(34, 34, 34);">
 
             <div class="introduction-ctn">
               <p style="color:whitesmoke;">Hello, I am</p>
@@ -39,10 +41,16 @@
             
           </div>
 
-          <div class="main-content-ctn">
+          <div id="project" class="main-content-ctn">
+            <div id="projectContainer" style="width:100%; height:100%; position: relative;"></div>
           </div>
 
-          <div class="main-content-ctn">
+          <div id="about" class="main-content-ctn">
+            <div id="aboutContainer" style="width:100%; height:100%; position: relative;"></div>
+          </div>
+
+          <div id="resume" class="main-content-ctn">
+            <div id="resumeContainer" style="width:100%; height:100%; position: relative;"></div>
           </div>
 
         </div>
@@ -50,8 +58,11 @@
     <footer>
     </footer>
 
-  <script src="functions/navbar.js"></script>
+  <script src="functions/about.js"></script>
   <script src="functions/index.js"></script>
+  <script src="functions/navbar.js"></script>
+  <script src="functions/project.js"></script>
+  <script src="functions/resume.js"></script>
 
 </body>
 

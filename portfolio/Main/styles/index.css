@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,8 +15,10 @@ body{
     height:min-content;
 
     background-color: rgb(21, 21, 21);
+
     /* box-sizing: border-box; */
     /* border:1px solid red; */
+    /* scroll-behavior: smooth; */
 }
 
 a{
