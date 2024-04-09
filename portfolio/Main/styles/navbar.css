@@ -95,4 +95,8 @@
         color: white;
         transform: translateY(-4px);
       }
+
+      .main-nav-bar-ctn{
+        padding: 20px 10px 16.5px 0px;
+    }
 }
