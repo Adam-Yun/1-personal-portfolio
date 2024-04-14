@@ -35,20 +35,44 @@
 }
 
 /* For interactive button */
-.pushable {
-    background: hsl(340deg 100% 32%);
-    border: none;
-    border-radius: 12px;
-    padding: 0;
-    cursor: pointer;
-  }
+  .pushable {
+      /* background: hsl(340deg 100% 32%); */
+      /* background: hsl(140deg 100% 32%); */
+      background: hsl(0deg 0% 32%);
+      border: none;
+      border-radius: 12px;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .pushable-green{
+      /* background: hsl(340deg 100% 32%); */
+      background: hsl(140deg 100% 32%);
+      /* background: hsl(0deg 0% 32%); */
+      border: none;
+      border-radius: 12px;
+      padding: 0;
+      cursor: pointer;
+    }
   
   .front {
     display: block;
     padding: 12px 42px;
     border-radius: 12px;
     font-size: 1.25rem;
-    background: hsl(345deg 100% 47%);
+    /* background: hsl(345deg 100% 47%); */
+    /* background: hsl(145deg 100% 47%); */
+    background: hsl(0deg 0% 47%);
+    color: white;
+    transform: translateY(-4px);
+  }
+
+  .front-green{
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(145deg 100% 47%);
     color: white;
     transform: translateY(-4px);
   }

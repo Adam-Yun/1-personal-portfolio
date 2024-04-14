@@ -61,6 +61,13 @@ a{
     color:white;
 }
 
+.project-card-ctn-title p em{
+    font-size: 70%;
+    font-weight: lighter;
+    /* color: rgb(120, 120, 120); */
+    color:white;
+}
+
 .project-card-window-ctn{
     position: relative;
     /* width is not added because margin controls it */
