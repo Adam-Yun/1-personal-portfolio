@@ -7,24 +7,25 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(html => {
           document.getElementById("navbarContainer").innerHTML = html;
           buttonClick();
-          changeButtonStateToPressed()
+          // changeButtonStateToPressed()
         })
         .catch(error => {
           console.error("Error fetching navbar:", error);
         });
     }
 
-    // Private variable
-    let buttonPressed = 'None';
+    // // Private variable
+    // let buttonPressed = 'None';
 
     // Function to know what button is clicked
     function buttonClick() {
       const homeButton = document.getElementById("homeButton");
       if(homeButton){
         homeButton.addEventListener('click', function() {
-          console.log("Home Button Clicked")
+          // console.log("Home Button Clicked")
           buttonPressed = 'homeButton'
-          console.log(buttonPressed)
+          // console.log(buttonPressed)
+          changeButtonStateToPressed()
         });
       }
       else{
@@ -34,9 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const projectButton = document.getElementById("projectButton");
       if(projectButton){
         projectButton.addEventListener('click', function() {
-          console.log("Project Button Clicked")
+          // console.log("Project Button Clicked")
           buttonPressed = 'projectButton'
-          console.log(buttonPressed)
+          // console.log(buttonPressed)
+          changeButtonStateToPressed()
         });
       }
       else{
@@ -46,9 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const aboutButton = document.getElementById("aboutButton");
       if(aboutButton){
         aboutButton.addEventListener('click', function() {
-          console.log("About Button Clicked")
+          // console.log("About Button Clicked")
           buttonPressed = 'aboutButton'
-          console.log(buttonPressed)
+          // console.log(buttonPressed)
+          changeButtonStateToPressed()
         });
       }
       else{
@@ -58,9 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const resumeButton = document.getElementById("resumeButton");
       if(resumeButton){
         resumeButton.addEventListener('click', function() {
-          console.log("Resume Button Clicked")
+          // console.log("Resume Button Clicked")
           buttonPressed = 'resumeButton'
-          console.log(buttonPressed)
+          // console.log(buttonPressed)
+          changeButtonStateToPressed()
         });
       }
       else{
@@ -69,9 +73,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     function changeButtonStateToPressed(){
+      const buttonBgs = document.querySelectorAll('button')
+      const buttonBgPressed = document.getElementById(buttonPressed);
+
       // This gets the entire element button and grabs all existing ones in the html
       // To print just button id do buttons.id
-      const buttons = document.querySelectorAll('button')
+      const buttons = document.querySelectorAll('span')
+      const pressed = document.getElementById(buttonPressed);
+
+      pressedSpan = pressed.querySelector('span');
+      
+
+      buttonBgs.forEach(buttonBg => {
+        buttonBg.classList.remove('pushable-pressed');
+        buttonBg.classList.add('pushable');
+      });
+
+      buttons.forEach(button => {
+        button.classList.remove('front-pressed');
+        button.classList.add('front');
+      });
+
+      pressedSpan.classList.remove('front')
+      pressedSpan.classList.add('front-pressed')
+
+      buttonBgPressed.classList.remove('pushable');
+      buttonBgPressed.classList.add('pushable-pressed');
 
       // Reset all button colors to grey
       // buttons.forEach(button => {
@@ -82,9 +109,9 @@ document.addEventListener("DOMContentLoaded", function () {
       //   button.classList.add('front')
       // });
 
-      const element = document.getElementById(buttonPressed);
+      // const element = document.getElementById(buttonPressed);
       // element.classList.remove()
-      console.log(buttons)
+      // console.log(buttons)
     }
 
     // Call the function to include navbar

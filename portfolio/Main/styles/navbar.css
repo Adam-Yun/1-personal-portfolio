@@ -30,10 +30,6 @@
     box-sizing: border-box;
 }
 
-.main-nav-bar-section a{
-    color:white;
-}
-
 /* For interactive button */
   .pushable {
       /* background: hsl(340deg 100% 32%); */
@@ -45,7 +41,7 @@
       cursor: pointer;
     }
 
-    .pushable-green{
+    .pushable-pressed {
       /* background: hsl(340deg 100% 32%); */
       background: hsl(140deg 100% 32%);
       /* background: hsl(0deg 0% 32%); */
@@ -62,26 +58,29 @@
     font-size: 1.25rem;
     /* background: hsl(345deg 100% 47%); */
     /* background: hsl(145deg 100% 47%); */
+    color:white;
     background: hsl(0deg 0% 47%);
-    color: white;
     transform: translateY(-4px);
   }
 
-  .front-green{
+  .front-pressed {
     display: block;
     padding: 12px 42px;
     border-radius: 12px;
     font-size: 1.25rem;
+    /* background: hsl(345deg 100% 47%); */
     background: hsl(145deg 100% 47%);
-    color: white;
+    /* color:rgb(57, 255, 20); */
+    color: hsl(0deg 0% 47%);;
+    /* background: hsl(0deg 0% 47%); */
     transform: translateY(-4px);
   }
-  
-  .pushable:active .front {
+
+  .pushable:active .front,.pushable-pressed:active .front {
     transform: translateY(-2px);
   }
   
-  .pushable:focus:not(:focus-visible) {
+  .pushable:focus:not(:focus-visible), .pushable-pressed:focus:not(:focus-visible) {
     outline: none;
   }
 
@@ -92,7 +91,7 @@
       cubic-bezier(.3, .7, .4, 1);
   }
 
-  .pushable:hover .front {
+  .pushable:hover .front, .pushable-pressed:hover .front {
     transform: translateY(-6px);
     transition:
       transform
@@ -100,7 +99,7 @@
       cubic-bezier(.3, .7, .4, 1.5);
   }
 
-  .pushable:active .front {
+  .pushable:active .front, .pushable-pressed:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
   }
@@ -114,7 +113,7 @@
         border-radius: 12px;
         /* font-size: 1.25rem; */
         font-size: 1rem;
-        background: hsl(345deg 100% 47%);
+        background: hsl(0deg 0% 47%);
         color: white;
         transform: translateY(-4px);
       }
@@ -123,3 +122,4 @@
         padding: 40px 10px 36.5px 0px;
     }
 }
+
