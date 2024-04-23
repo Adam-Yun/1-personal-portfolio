@@ -76,11 +76,11 @@
     transform: translateY(-4px);
   }
 
-  .pushable:active .front,.pushable-pressed:active .front {
+  .pushable:active .front,.pushable-pressed:active .front-pressed {
     transform: translateY(-2px);
   }
   
-  .pushable:focus:not(:focus-visible), .pushable-pressed:focus:not(:focus-visible) {
+  .pushable:focus:not(:focus-visible), .pushable-pressed:focus-pressed:not(:focus-visible) {
     outline: none;
   }
 
@@ -91,7 +91,7 @@
       cubic-bezier(.3, .7, .4, 1);
   }
 
-  .pushable:hover .front, .pushable-pressed:hover .front {
+  .pushable:hover .front, .pushable-pressed:hover .front-pressed {
     transform: translateY(-6px);
     transition:
       transform
@@ -99,7 +99,7 @@
       cubic-bezier(.3, .7, .4, 1.5);
   }
 
-  .pushable:active .front, .pushable-pressed:active .front {
+  .pushable:active .front, .pushable-pressed:active .front-pressed {
     transform: translateY(-2px);
     transition: transform 34ms;
   }
