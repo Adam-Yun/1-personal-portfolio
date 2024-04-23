@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif, Helvetica, Arial;
+    color: whitesmoke;
+}
+
+body{
+    width:100%;
+    height:min-content;
+
+    background-color: rgb(21, 21, 21);
+    /* box-sizing: border-box; */
+    /* border:1px solid red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CSS for the about section */
+.about-ctn{
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.about-window-bar{
+    position:relative;
+    width:90%;
+    height:5%;
+    border-radius: 10px 10px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(34, 34, 34);
+
+    box-sizing: border-box;
+    border:1px solid whitesmoke;
+}
+
+.about-content-ctn{
+    position:relative;
+    width:90%;
+    height:80%;
+    border-radius: 0px 0px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(34, 34, 34);
+    
+    box-sizing: border-box;
+    /* border:1px solid red; */
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.about-content-title{
+    position:relative;
+    width:90%;
+    height:15%;
+    font-size: 150%;
+    font-weight: lighter;
+    text-decoration: underline;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.about-content-paragraph{
+    position:relative;
+    width:90%;
+    height:85%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:auto;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
