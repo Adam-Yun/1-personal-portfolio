@@ -117,3 +117,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Call the function to include navbar
     includeNavbar();
   });
+  
+//   function scrollToElement(id, offset) {
+  // onclick="scrollToElement('project', 100)"
+//     console.log('offset clicked')
+//     var element = document.getElementById(id);
+//     var elementPosition = element.offsetTop - offset;
+
+//     window.scrollTo({
+//         top: elementPosition,
+//         behavior: 'smooth'
+//     });
+// }

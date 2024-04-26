@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif, Helvetica, Arial;
+    color: whitesmoke;
+}
+
+body{
+    width:100%;
+    height:min-content;
+
+    background-color: rgb(21, 21, 21);
+    /* box-sizing: border-box; */
+    /* border:1px solid red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+/* CSS for resume section */
+.resume-ctn{
+    position:relative;
+    width:100%;
+    height:100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.resume-window-bar{
+    position: relative;
+    width:90%;
+    height:5%;
+    border-radius: 10px 10px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(34, 34, 34);
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+.resume-window-bar p{
+    font-weight:light;
+    font-size: 175%;
+}
+
+.resume-content-ctn{
+    position: relative;
+    width:90%;
+    height:75%;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 40px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap:wrap;
+
+    background-color:rgb(34, 34, 34);
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+
+.professional-experience-section, .education-section, .skills-section{
+    position: relative;
+    padding:5px;
+    width: 50%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.skills-section{
+    width: 100%;
+    height: 25%;
+}
+
+.professional-experience-title, .education-title, .skills-title{
+    position: relative;
+    width: 100%;
+    height:10%;
+    padding-left: 10px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.skills-title{
+    height:30%;
+    justify-content: center;
+    padding-left: 0;
+    padding-top:5px;
+    border-top:1px solid grey;
+}
+
+/* Resumes's each section title */
+.professional-experience-title p, .education-title p, .skills-title p{
+    font-weight: lighter;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+.professional-experience-content, .education-content, .skills-content{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    padding:10px;
+
+    display: flex;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.skills-content{
+    height:70%;
+}
+
+/* Resume, pro-exp content css */
+
+.professional-experience-content ol{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+
+}
+
+.professional-experience-content ol li{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.professional-experience-text{
+    width:70%;
+    height:100%;
+    font-size: 120%;
+    font-weight: lighter;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    /* box-sizing: border-box; */
+    /* border:1px solid red; */
+}
+
+.professional-experience-date{
+    width:25%;
+    height:100%;
+    margin-left:auto;
+    font-size: 90%;
+    font-weight: lighter;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+/* Resume, education content css */
+.education-content ol{
+    width: 100%;
+    /* height:max-content; */
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+
+}
+
+.education-content ol li{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.education-text{
+    width:70%;
+    height:100%;
+    font-size: 120%;
+    font-weight:lighter;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.education-date{
+    width:25%;
+    height:100%;
+    margin-left:auto;
+    font-size: 90%;
+    font-weight: lighter;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}

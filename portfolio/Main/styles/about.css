@@ -22,12 +22,12 @@ a{
 /* CSS for the about section */
 .about-ctn{
     position:relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
     box-sizing: border-box;
@@ -46,7 +46,7 @@ a{
     background-color:rgb(34, 34, 34);
 
     box-sizing: border-box;
-    border:1px solid whitesmoke;
+    border:1px solid grey;
 }
 
 .about-content-ctn{
@@ -63,9 +63,9 @@ a{
     
     box-sizing: border-box;
     /* border:1px solid red; */
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
 
 .about-content-title{
@@ -74,15 +74,42 @@ a{
     height:15%;
     font-size: 150%;
     font-weight: lighter;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.about-content-profile-img{
+    width:90%;
+    height:100%;
+    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
 
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    /* border: 1px solid green; */
 }
+
+.about-content-profile-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* zoom:150%; */
+
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+/* .my-profile-image{
+
+} */
 
 .about-content-paragraph{
     position:relative;
@@ -91,8 +118,9 @@ a{
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:start;
     overflow:auto;
+    scrollbar-color: whitesmoke transparent;
 
     box-sizing: border-box;
     /* border: 1px solid red; */
