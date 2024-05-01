@@ -3,7 +3,7 @@
     padding: 0;
 
     font-family: sans-serif, Helvetica, Arial;
-    color: whitesmoke;
+    color: white;
 }
 
 body{
@@ -11,7 +11,8 @@ body{
     height:min-content;
 
     background-color: rgb(21, 21, 21);
-    /* box-sizing: border-box; */
+    /* background-color: white; */
+    box-sizing: border-box;
     /* border:1px solid red; */
 }
 
@@ -29,6 +30,9 @@ a{
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    /* background-color: white; */
+    /* background: linear-gradient(to bottom, rgba(21, 21, 21,1) , rgb(255, 255, 255) 500%); */
+    /* color:black !important; */
 
     box-sizing: border-box;
     /* border: 1px solid red; */
@@ -36,29 +40,32 @@ a{
 
 .resume-window-bar{
     position: relative;
-    width:90%;
-    height:5%;
-    border-radius: 10px 10px 0px 0px;
+    width:100%;
+    height:10%;
+    /* border-radius: 10px 10px 0px 0px; */
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color:rgb(34, 34, 34);
+    /* background-color:rgb(34, 34, 34); */
+    /* background-color: grey; */
     box-sizing: border-box;
-    border: 1px solid grey;
+    /* border: 1px solid red; */
+    /* border-bottom: 0.5px solid white; */
 }
 
 .resume-window-bar p{
-    font-weight:light;
-    font-size: 175%;
+    font-weight: bold;
+    font-size: 250%;
 }
 
 .resume-content-ctn{
     position: relative;
-    width:90%;
-    height:75%;
-    border-radius: 0px 0px 10px 10px;
+    width:100%;
+    height:70%;
+    /* border-radius: 0px 0px 10px 10px; */
+    padding-top: 20px;
     margin-bottom: 40px;
 
     overflow: hidden;
@@ -66,15 +73,16 @@ a{
     display: flex;
     flex-wrap:wrap;
 
-    background-color:rgb(34, 34, 34);
-    box-sizing: border-box;
-    border: 1px solid grey;
-}
+    /* background-color:rgb(34, 34, 34); */
+    /* background-color: grey; */
 
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
 
 .professional-experience-section, .education-section, .skills-section{
     position: relative;
-    padding:5px;
+    padding:0px 60px;
     width: 50%;
     height: 75%;
 
@@ -88,6 +96,10 @@ a{
 .skills-section{
     width: 100%;
     height: 25%;
+    padding:0px;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 .professional-experience-title, .education-title, .skills-title{
@@ -107,16 +119,16 @@ a{
 .skills-title{
     height:30%;
     justify-content: center;
-    padding-left: 0;
-    padding-top:5px;
-    border-top:1px solid grey;
+    padding:0px;
+    /* border:1px solid red; */
 }
 
 /* Resumes's each section title */
 .professional-experience-title p, .education-title p, .skills-title p{
-    font-weight: lighter;
-    font-size: 150%;
-    text-decoration: underline;
+    font-weight: normal;
+    font-size: 200%;
+    /* text-decoration: underline; */
+    border-bottom: 0.5px solid white;
 }
 
 .professional-experience-content, .education-content, .skills-content{
@@ -133,6 +145,10 @@ a{
 
 .skills-content{
     height:70%;
+    padding:0px;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
 }
 
 /* Resume, pro-exp content css */
@@ -153,7 +169,7 @@ a{
 
 .professional-experience-content ol li{
     width: 100%;
-    height: 20%;
+    height: 30%;
 
     display: flex;
     justify-content: space-between;
@@ -173,7 +189,7 @@ a{
     justify-content: start;
     align-items: center;
 
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     /* border:1px solid red; */
 }
 
@@ -211,7 +227,7 @@ a{
 
 .education-content ol li{
     width: 100%;
-    height: 20%;
+    height: 30%;
 
     display: flex;
     justify-content: space-between;
@@ -248,4 +264,53 @@ a{
 
     box-sizing: border-box;
     /* border:1px solid red; */
+}
+
+/* Skill Section of CSS */
+.skills-content ol{
+    position:relative;
+    width: 100%;
+    height: 100%;
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.skills-content ol li{
+    width: auto;
+    height: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+.skills-content ol li img{
+    width:45px;
+    height: 45px;
+    transition: width 0.25s, height 0.25s;
+}
+
+.skills-content ol li img:hover{
+    width:50px;
+    height: 50px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.skills-content ol li p{
+    width: 100%;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
