@@ -105,12 +105,29 @@ a{
 
 .project-card{
     position: relative;
-    width:300px;
-    height:400px;
+    width:300px !important;
+    height:400px !important;
     margin:20px 50px;
     /* margin: 25px 0px; This is for mobile please adjust the media query for it*/
     border-radius: 20px;
     
     box-sizing: border-box;
     border: 1px solid grey;
+}
+
+@media screen and (max-width: 500px){
+
+    .project-window-bar{
+        width:65%;
+    }
+    
+    .project-card-ctn{
+        width:65%;
+    }
+
+    .project-card{
+        width:300px !important;
+        height:250px !important;
+        margin:20px 0px;
+    }
 }

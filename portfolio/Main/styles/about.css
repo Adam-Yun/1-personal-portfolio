@@ -121,3 +121,10 @@ a{
     font-size:110%;
     line-height: 1.5;
 }
+
+@media screen and (max-width: 500px){
+    .about-content-profile-img img{
+        width: 225px;
+        height: 225px;
+    }
+}

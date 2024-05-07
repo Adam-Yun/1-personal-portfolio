@@ -30,9 +30,6 @@ a{
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    /* background-color: white; */
-    /* background: linear-gradient(to bottom, rgba(21, 21, 21,1) , rgb(255, 255, 255) 500%); */
-    /* color:black !important; */
 
     box-sizing: border-box;
     /* border: 1px solid red; */
@@ -42,17 +39,13 @@ a{
     position: relative;
     width:100%;
     height:10%;
-    /* border-radius: 10px 10px 0px 0px; */
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* background-color:rgb(34, 34, 34); */
-    /* background-color: grey; */
     box-sizing: border-box;
-    /* border: 1px solid red; */
-    /* border-bottom: 0.5px solid white; */
+    border: 1px solid red;
 }
 
 .resume-window-bar p{
@@ -64,17 +57,12 @@ a{
     position: relative;
     width:100%;
     height:70%;
-    /* border-radius: 0px 0px 10px 10px; */
     padding-top: 20px;
     margin-bottom: 40px;
 
     overflow: hidden;
-
     display: flex;
     flex-wrap:wrap;
-
-    /* background-color:rgb(34, 34, 34); */
-    /* background-color: grey; */
 
     box-sizing: border-box;
     /* border: 1px solid red; */
@@ -84,13 +72,14 @@ a{
     position: relative;
     padding:0px 60px;
     width: 50%;
-    height: 75%;
+    /* The issue lies here the height must be adjusted for column flex direction in mobile view */
+    height: 75%; 
 
     display: flex;
     flex-direction: column;
 
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .skills-section{
@@ -99,7 +88,7 @@ a{
     padding:0px;
 
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .professional-experience-title, .education-title, .skills-title{
@@ -127,7 +116,6 @@ a{
 .professional-experience-title p, .education-title p, .skills-title p{
     font-weight: normal;
     font-size: 200%;
-    /* text-decoration: underline; */
     border-bottom: 0.5px solid white;
 }
 
@@ -313,4 +301,14 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    .professional-experience-section{
+        width: 100%;
+    }
+
+    .education-section{
+        width: 100%;
+    }
 }

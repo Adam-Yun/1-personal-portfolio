@@ -107,19 +107,34 @@
 /* Button Responsiveness */
 @media screen and (max-width: 500px){
     .front {
-        display: block;
-        /* padding: 12px 42px; */
-        padding: 12px 12px;
-        border-radius: 12px;
-        /* font-size: 1.25rem; */
-        font-size: 1rem;
-        background: hsl(0deg 0% 47%);
-        color: white;
-        transform: translateY(-4px);
-      }
+      display: block;
+      /* padding: 12px 42px; */
+      padding: 12px 12px;
+      border-radius: 12px;
+      /* font-size: 1.25rem; */
+      font-size: 0.8rem;
+      font-weight: bold;
+      background: hsl(0deg 0% 47%);
+      color: white;
+      transform: translateY(-4px);
+    }
 
-      .main-nav-bar-ctn{
-        padding: 40px 10px 36.5px 0px;
+    .main-nav-bar-ctn{
+      padding: 40px 10px 36.5px 0px;
+    }
+
+    .front-pressed {
+      display: block;
+      padding: 12px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      /* background: hsl(345deg 100% 47%); */
+      background: hsl(145deg 100% 47%);
+      /* color:rgb(57, 255, 20); */
+      color: hsl(0deg 0% 47%);;
+      /* background: hsl(0deg 0% 47%); */
+      transform: translateY(-4px);
     }
 }
 

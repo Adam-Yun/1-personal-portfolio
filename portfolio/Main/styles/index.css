@@ -63,6 +63,7 @@ a{
 .introduction-ctn, .introduction-name-ctn, .introduction-job-ctn{
   width:100%;
   height:min-content;
+  font-size: 500%;
 
   position: relative;
   display: flex;
@@ -71,31 +72,14 @@ a{
 
   /* border:1px solid red; */
   box-sizing: border-box;
-  
-}
-
-.introduction-ctn{
-  font-size: 500%;
-
-  align-items: center;
-}
-
-.introduction-name-ctn{
-  font-size: 500%;
 }
 
 .introduction-name-ctn p{
-  margin: 5px 0px 5px 0px;
+  /* margin: 5px 0px 5px 0px; */
 
   background-image:linear-gradient(rgb(27, 27, 216) 0%, rgb(13, 226, 84)); 
   color:transparent; 
   background-clip: text; /* Apply gradient to text */
-}
-
-.introduction-job-ctn{
-  font-size: 500%;
-
-  align-items: center;
 }
 
 /* Main Option CSS */
@@ -158,4 +142,10 @@ a{
   background-image:linear-gradient(rgb(213, 211, 218) 0%, rgb(89, 87, 89) 100%); 
   color:transparent;
   background-clip: text;
+}
+
+@media screen and (max-width: 500px){
+  .introduction-ctn, .introduction-name-ctn, .introduction-job-ctn{
+    font-size: 250%;
+  }
 }
