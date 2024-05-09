@@ -198,7 +198,7 @@ a{
     align-items: center;
 
     box-sizing: border-box;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 
 /* Skill Section of CSS */
