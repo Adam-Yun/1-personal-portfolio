@@ -343,10 +343,12 @@ a{
 
     .professional-experience-text, .education-text{
         font-size: 100%;
+        text-decoration: none;
     }
     
     .professional-experience-date, .education-date{
         font-size: 65%;
+        text-decoration: none;
     }
 
     .professional-experience-content ol li, .education-content ol li{
