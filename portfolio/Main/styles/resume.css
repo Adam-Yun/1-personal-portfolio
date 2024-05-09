@@ -142,8 +142,9 @@ a{
 
 /* Resume, pro-exp content css */
 
-.professional-experience-content ol{
+.professional-experience-content ol, .education-content ol{
     width: 100%;
+
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -153,10 +154,9 @@ a{
 
     box-sizing: border-box;
     /* border:1px solid red; */
-
 }
 
-.professional-experience-content ol li{
+.professional-experience-content ol li, .education-content ol li{
     width: 100%;
     height: 30%;
 
@@ -168,10 +168,13 @@ a{
     /* border:1px solid red; */
 }
 
-.professional-experience-text{
+.professional-experience-text, .education-text, .professional-experience-date, .education-date{
+    font-size: 120%;
+}
+
+.professional-experience-text, .education-text{
     width:70%;
     height:100%;
-    font-size: 120%;
     font-weight: lighter;
     
     display: flex;
@@ -182,69 +185,10 @@ a{
     /* border:1px solid red; */
 }
 
-.professional-experience-date{
+.professional-experience-date, .education-date{
     width:25%;
     height:100%;
     margin-left:auto;
-    font-size: 90%;
-    font-weight: lighter;
-
-    display: flex;
-    justify-content: end;
-    align-items: center;
-
-    box-sizing: border-box;
-    /* border:1px solid red; */
-}
-
-/* Resume, education content css */
-.education-content ol{
-    width: 100%;
-    /* height:max-content; */
-
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-    
-
-    box-sizing: border-box;
-    /* border:1px solid red; */
-
-}
-
-.education-content ol li{
-    width: 100%;
-    height: 30%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    box-sizing: border-box;
-    /* border:1px solid red; */
-}
-
-.education-text{
-    width:70%;
-    height:100%;
-    font-size: 120%;
-    font-weight:lighter;
-    
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    box-sizing: border-box;
-    /* border:1px solid red; */
-}
-
-.education-date{
-    width:25%;
-    height:100%;
-    margin-left:auto;
-    font-size: 90%;
     font-weight: lighter;
 
     display: flex;
@@ -316,15 +260,12 @@ a{
 
     .professional-experience-section, .education-section, .skills-section{
         height:33%;
+        padding:0px;
     }
 
     .resume-content-ctn{
         padding:0px;
         margin:0px;
-    }
-    
-    .professional-experience-section, .education-section, .skills-section{
-        padding:0px;
     }
 
     .professional-experience-title, .education-title, .skills-title{
@@ -341,17 +282,13 @@ a{
         padding: 0px 25px;
     }
 
-    .professional-experience-text, .education-text{
-        font-size: 100%;
-        text-decoration: none;
-    }
-    
-    .professional-experience-date, .education-date{
-        font-size: 65%;
+    .professional-experience-text, .education-text, .professional-experience-date, .education-date{
+        font-size: 90%;
         text-decoration: none;
     }
 
     .professional-experience-content ol li, .education-content ol li{
+        margin-top: 5px;
         border-bottom:1px solid white;
     }
     
