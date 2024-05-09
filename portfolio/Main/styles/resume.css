@@ -45,7 +45,7 @@ a{
     align-items: center;
 
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .resume-window-bar p{
@@ -79,7 +79,7 @@ a{
     flex-direction: column;
 
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .skills-section{
@@ -88,7 +88,7 @@ a{
     padding:0px;
 
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .professional-experience-title, .education-title, .skills-title{
@@ -109,6 +109,7 @@ a{
     height:30%;
     justify-content: center;
     padding:0px;
+    box-sizing: border-box;
     /* border:1px solid red; */
 }
 
@@ -116,7 +117,7 @@ a{
 .professional-experience-title p, .education-title p, .skills-title p{
     font-weight: normal;
     font-size: 200%;
-    border-bottom: 0.5px solid white;
+    border-bottom: 2.5px solid white;
 }
 
 .professional-experience-content, .education-content, .skills-content{
@@ -146,7 +147,7 @@ a{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
     align-items: center;
     
 
@@ -262,6 +263,7 @@ a{
 
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items:center;
     
@@ -270,8 +272,8 @@ a{
 }
 
 .skills-content ol li{
-    width: auto;
-    height: 100%;
+    width: 70px;
+    height: auto;
     position: relative;
 
     display: flex;
@@ -310,5 +312,52 @@ a{
 
     .education-section{
         width: 100%;
+    }
+
+    .professional-experience-section, .education-section, .skills-section{
+        height:33%;
+    }
+
+    .resume-content-ctn{
+        padding:0px;
+        margin:0px;
+    }
+    
+    .professional-experience-section, .education-section, .skills-section{
+        padding:0px;
+    }
+
+    .professional-experience-title, .education-title, .skills-title{
+        height:25%;
+        padding: 0px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .professional-experience-content, .education-content, .skills-content{
+        height: 75%;
+        padding: 0px 25px;
+    }
+
+    .professional-experience-text, .education-text{
+        font-size: 100%;
+    }
+    
+    .professional-experience-date, .education-date{
+        font-size: 80%;
+    }
+
+    .professional-experience-content ol li, .education-content ol li{
+        border-bottom:1px solid white;
+    }
+    
+    .skills-content ol li{
+        width:50px
+    }
+    
+    .skills-content ol li p{
+        font-size: 55%;
     }
 }
