@@ -176,6 +176,7 @@ a{
     width:70%;
     height:100%;
     font-weight: lighter;
+    text-decoration: none !important;
     
     display: flex;
     justify-content: start;
