@@ -190,6 +190,7 @@ a{
     height:100%;
     margin-left:auto;
     font-weight: lighter;
+    text-decoration: none !important;
 
     display: flex;
     justify-content: end;
