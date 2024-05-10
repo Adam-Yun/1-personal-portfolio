@@ -158,7 +158,7 @@ a{
 
 .professional-experience-content ol li, .education-content ol li{
     width: 100%;
-    height: 30%;
+    height: 20%;
 
     display: flex;
     justify-content: space-between;
@@ -166,10 +166,11 @@ a{
 
     box-sizing: border-box;
     /* border:1px solid red; */
+    border-bottom:1px solid white;
 }
 
 .professional-experience-text, .education-text, .professional-experience-date, .education-date{
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .professional-experience-text, .education-text{
@@ -183,7 +184,7 @@ a{
     align-items: center;
 
     box-sizing: border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .professional-experience-date, .education-date{
@@ -198,7 +199,7 @@ a{
     align-items: center;
 
     box-sizing: border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 /* Skill Section of CSS */
@@ -289,6 +290,7 @@ a{
     }
 
     .professional-experience-content ol li, .education-content ol li{
+        height:auto;
         margin-top: 5px;
     }
     
