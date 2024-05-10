@@ -131,13 +131,13 @@ a{
     }
 
     .project-card-ctn{
-        height:65%;
+        height:75%;
         width:75%;
     }
 
     .project-card{
         width:300px !important;
         height:400px !important;
-        margin: 40px 0px;
+        margin: 60px 0px;
     }
 }
