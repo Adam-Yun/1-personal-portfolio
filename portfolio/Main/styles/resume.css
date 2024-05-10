@@ -183,7 +183,7 @@ a{
     align-items: center;
 
     box-sizing: border-box;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
 
 .professional-experience-date, .education-date{
@@ -286,7 +286,6 @@ a{
 
     .professional-experience-text, .education-text, .professional-experience-date, .education-date{
         font-size: 90%;
-        text-decoration: none;
     }
 
     .professional-experience-content ol li, .education-content ol li{
