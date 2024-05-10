@@ -67,7 +67,7 @@ a{
     position:relative;
     width:90%;
     height:15%;
-    font-size: 180%;
+    font-size: 250%;
     font-weight: bold;
     /* text-decoration: underline; */
 
@@ -107,6 +107,9 @@ a{
     width:75%;
     height:85%;
 
+    text-align:justify;
+    text-align-last: start; /* Adjust text-align-last */
+
     display: flex;
     justify-content: center;
     align-items:start;
@@ -118,13 +121,18 @@ a{
 }
 
 .about-content-paragraph p{
-    font-size:110%;
+    /* font-size:110%; */
     line-height: 1.5;
+    margin:0px 10px;
 }
 
 @media screen and (max-width: 500px){
     .about-content-profile-img img{
         width: 225px;
         height: 225px;
+    }
+
+    .about-content-paragraph{
+        width: 90%;
     }
 }

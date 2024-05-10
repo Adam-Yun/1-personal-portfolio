@@ -34,7 +34,7 @@ a{
     /* border: 1px solid red; */
 }
 
-.project-window-bar{
+/* .project-window-bar{
     position: relative;
     width:90%;
     height:5%;
@@ -43,40 +43,45 @@ a{
     background-color:rgb(34, 34, 34);
     box-sizing: border-box;
     border: 1px solid grey;
-}
+} */
 
 .project-card-ctn{
     position: relative;
     width:90%;
     height:75%;
-    border-radius: 0px 0px 10px 10px;
     margin-bottom: 40px;
 
     overflow: hidden;
-
-    background-color:rgb(34, 34, 34);
     box-sizing: border-box;
-    border: 1px solid grey;
+    /* border: 1px solid red; */
 }
 
 .project-card-ctn-title{
+    width: 100%;
     position: relative;
-    margin: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
 
 .project-card-ctn-title p{
-    font-size: 150%;
-    /* color: rgb(120, 120, 120); */
+    font-size: 250%;
+    font-weight: bold;
     color:white;
 }
 
 .project-card-ctn-title p em{
-    font-size: 70%;
+    font-size: 40%;
     font-weight: lighter;
-    /* color: rgb(120, 120, 120); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color:white;
 }
 
@@ -84,8 +89,8 @@ a{
     position: relative;
     /* width is not added because margin controls it */
     height: 80%;
-    margin: 0px 20px 0px 20px;
-    padding: 20px;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 20px;
 
     justify-content: center;
     align-items: center;
@@ -93,7 +98,7 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     overflow: auto;
-    scrollbar-color: whitesmoke transparent;
+    scrollbar-color: white transparent;
 
     box-sizing: border-box;
     /* border: 1px solid red;     */
@@ -121,13 +126,18 @@ a{
         width:65%;
     }
     
+    .project-card-window-ctn{
+        height:85%;
+    }
+
     .project-card-ctn{
-        width:65%;
+        height:65%;
+        width:75%;
     }
 
     .project-card{
         width:300px !important;
-        height:250px !important;
-        margin:20px 0px;
+        height:400px !important;
+        margin: 40px 0px;
     }
 }
