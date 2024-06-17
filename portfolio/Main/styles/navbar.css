@@ -69,9 +69,10 @@
     border-radius: 12px;
     font-size: 1.25rem;
     /* background: hsl(345deg 100% 47%); */
-    background: hsl(145deg 100% 47%);
+    /* background: hsl(145deg 100% 47%); */
+    background-color: hsl(124, 100%, 55%);
     /* color:rgb(57, 255, 20); */
-    color: hsl(0deg 0% 47%);;
+    color: hsl(0deg 0% 47%);
     /* background: hsl(0deg 0% 47%); */
     transform: translateY(-4px);
   }
@@ -130,9 +131,10 @@
       font-size: 0.8rem;
       font-weight: bold;
       /* background: hsl(345deg 100% 47%); */
-      background: hsl(145deg 100% 47%);
+      /* background: hsl(145deg 100% 47%); */
+      background-color: hsl(124, 100%, 55%);
       /* color:rgb(57, 255, 20); */
-      color: hsl(0deg 0% 47%);;
+      color: hsl(0deg 0% 47%);
       /* background: hsl(0deg 0% 47%); */
       transform: translateY(-4px);
     }

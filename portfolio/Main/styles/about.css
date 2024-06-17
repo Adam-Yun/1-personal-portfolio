@@ -34,21 +34,6 @@ a{
     /* border:1px solid red; */
 }
 
-/* .about-window-bar{
-    position:relative;
-    width:90%;
-    height:5%;
-    border-radius: 10px 10px 0px 0px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(34, 34, 34);
-
-    box-sizing: border-box;
-    border:1px solid grey;
-} */
-
 .about-content-ctn{
     position:relative;
     width:90%;
