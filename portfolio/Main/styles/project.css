@@ -111,6 +111,7 @@ a{
     margin:20px 50px;
     /* margin: 25px 0px; This is for mobile please adjust the media query for it*/
     border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5), -5px -5px 15px rgba(0,0,0,0.5);
 
     overflow: hidden;
     
@@ -123,7 +124,7 @@ a{
     height:45%;
 
     position: relative;
-    background-color: white;
+    background-color: rgb(21, 21, 21);;
 
     box-sizing: border-box;
     /* border:1px solid red; */
@@ -134,7 +135,7 @@ a{
     height:100%;
 
     position: relative;
-    object-fit:contain;
+    object-fit:cover;
 
     box-sizing: border-box;
     /* border:1px solid red; */
@@ -166,9 +167,9 @@ a{
     /* border-bottom: 1px solid white; */
 }
 .project-info-title p{
-    font-size: 100%;
-    font-weight:lighter;
-    border-bottom: 1px solid white;
+    font-size: 110%;
+    font-weight:normal;
+    /* border-bottom: 1px solid white; */
     /* text-decoration: underline; */
 }
 
@@ -209,7 +210,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,10%);
+    background-color: rgba(70, 70, 70, 0.5);
 
     box-sizing: border-box;
     /* border:1px solid red; */

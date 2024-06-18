@@ -71,7 +71,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     box-sizing: border-box;
     /* border: 1px solid green; */
 }
@@ -84,7 +84,8 @@ a{
 
     object-fit: cover;
     box-sizing: border-box;
-    border: 5px solid whitesmoke;
+    /* border: 2px solid rgb(0, 0, 0); */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8), -5px -5px 15px rgba(0,0,0,0.8);
 }
 
 .about-content-paragraph{
