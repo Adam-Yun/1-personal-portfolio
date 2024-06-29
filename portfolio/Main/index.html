@@ -1,72 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/project.css">
-  <link rel="stylesheet" href="styles/resume.css">
-  
-
-  <title>Adam Yun</title>
-
-  <!-- API's -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  
+    <title>Adam Yun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
 </head>
 <body>
-    <header>
-    </header>
+    <nav id="navbarContainer"></nav>
 
-    <main>
-     
-      <!-- Load Navbar HTML -->
-      <div id="navbarContainer"></div>
-
-      <!-- MAIN CONTENT -->
-        <div class="main-ctn">
-
-          <div id="introduction" class="main-content-ctn" style="background-color:rgb(34, 34, 34);">
-
-            <div class="introduction-ctn">
-              <p style="color:whitesmoke;">Hello, I'm</p>
-            </div>
-
-            <div class="introduction-name-ctn">
-              <p> Adam Yun</p>
-            </div>
-
-            <div class="introduction-job-ctn">
-              <p style="color:whitesmoke;">Software Developer</p>
-            </div>
-            
-          </div>
-
-          <div id="project" class="main-content-ctn">
-            <div id="projectContainer" style="width:100%; height:100%; position: relative;"></div>
-          </div>
-
-          <div id="about" class="main-content-ctn">
-            <div id="aboutContainer" style="width:100%; height:100%; position: relative;"></div>
-          </div>
-
-          <div id="resume" class="main-content-ctn">
-            <div id="resumeContainer" style="width:100%; height:100%; position: relative;"></div>
-          </div>
-
-        </div>
+    <div id="mobileMainNavLink" class="mobile-nav-links"></div>
+    
+    <main id="mainView" class="main-view">
+        <h1>Hello, I'm<span class="introduction-name"> Adam </span><br>Software Developer</h1>
     </main>
+
     <footer>
+        &copy; 2024 Adam Yun
     </footer>
 
-  <script src="functions/about.js"></script>
-  <script src="functions/index.js"></script>
-  <script src="functions/navbar.js"></script>
-  <script src="functions/project.js"></script>
-  <script src="functions/resume.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/mobile.js"></script>
 
 </body>
-
 </html>

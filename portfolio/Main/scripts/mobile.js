@@ -1,17 +1,17 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
     // Function to include navbar
-    function includeResume() {
-      fetch("resume.html")
+    function includeMobile() {
+      fetch("z-mobile.html")
         .then(response => response.text())
         .then(html => {
-          document.getElementById("resumeContainer").innerHTML = html;
+          document.getElementById("mobileMainNavLink").innerHTML = html;
         })
         .catch(error => {
-          console.error("Error fetching resume page:", error);
+          console.error("Error fetching project page:", error);
         });
     }
-  
+    
     // Call the function to include navbar
-    includeResume();
+    includeMobile();
   });

@@ -1,79 +1,80 @@
-<!-- project HTML page -->
-<div class="project-ctn">
-    <!-- <div class="project-window-bar">
-        
-    </div> -->
-    <div class="project-card-ctn">
-        <div class="project-card-ctn-title">
-            <p>PROJECT</p>
-            <p><em>scroll to see more</em></p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adam Yun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/project.css">
 
-        <div class="project-card-window-ctn">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <nav id="navbarContainer"></nav>
 
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="styles/images/unicon.png" alt="project image">
-                </div>
-                <div class="project-info">
-                    <div class="project-info-title">
-                        <p>AI Chatbot</p>
-                    </div>
-                    <div class="project-info-description">
-                        <p>A chatbot with Natural Language Processing using Meta's WitAI integration</p>
-                    </div>
-                    <div class="project-info-extra">
-                        <div class="project-info-extra-view">
-                            <a href="https://ubts.academy/en/" target="_blank"></a>
-                            View Page
-                        </div>
-                        <div class="project-info-extra-more">More</div>
-                    </div>
-                </div>
-            </div>
+    <div class="mobile-nav-links" id="mobileMainNavLink"></div>
+    
+    <main class="main-view" id="mainView">
+        <ul class="project-list">
 
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="styles/images/stock-forecast.png" alt="project image">
-                </div>
-                <div class="project-info">
-                    <div class="project-info-title">
-                        <p>Stock Prediction</p>
+            <li class="project-card" id="card-ai-chatbot">
+                <h3 class="project-title">AI Chatbot</h3>
+                <p class="project-description">A chatbot with Natural Language Processing using Meta's WitAI integration</p>
+                <div class="project-extra">
+                    <div class="chevron" id="chevron-ai-chatbot">
+                        <i class="fa fa-chevron-down"></i>
                     </div>
-                    <div class="project-info-description">
-                        <p>A webapp that predicts stock prices base on the popularity trend using AI / Model Training</p>
+                    <div class="github">
+                        <!-- <i class="fa fa-github"></i> -->
                     </div>
-                    <div class="project-info-extra">
-                        <div class="project-info-extra-view">
-                            <a href="https://stock-server.netlify.app/" target="_blank"></a>
-                            View Page
-                        </div>
-                        <div class="project-info-extra-more">More</div>
+                    <div class="website">
+                        <a href="https://ubts.academy/en/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
+            </li>
 
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="styles/images/unicon.png" alt="project image">
+            <li class="project-view" id="view-ai-chatbot">
+                <img class="project-image" id="image-ai-chatbot" src="styles/images/unicon.png" alt="Project Image">
+            </li>
+            
+            <li class="project-card" id="card-stock-prediction">
+                <h3 class="project-title">Stock Prediction</h3>
+                <p class="project-description">A webapp that predicts stock prices base on the popularity trend using AI / Model Training</p>
+                <div class="project-extra">
+                    <div class="chevron" id="chevron-stock-prediction">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adam-Yun/2-coin-detection" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="website">
+                        <a href="https://stock-server.netlify.app/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <div class="project-info-title">
-                        <p>AI Chatbot</p>
-                    </div>
-                    <div class="project-info-description">
-                        <p>A chatbot with META's WitAI integration</p>
-                    </div>
-                    <div class="project-info-extra">
-                        <div class="project-info-extra-view">
-                            <a href="https://ubts.academy/en/" target="_blank"></a>
-                            View Page
-                        </div>
-                        <div class="project-info-extra-more">More</div>
-                    </div>
-                </div>
-            </div>
+            </li>
 
-        </div>
-    </div>
-</div>
+            <li class="project-view" id="view-stock-prediction">
+                <img class="project-image" id="image-stock-prediction" src="styles/images/stock-forecast.png" alt="Project Image">
+            </li>
+            
+        </ul>
+    </main>
+
+    <footer>
+        &copy; 2024 Adam Yun
+    </footer>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/mobile.js"></script>
+    <script src="scripts/project.js"></script>
+
+</body>
+</html>
