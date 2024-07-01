@@ -7,7 +7,7 @@ document.getElementById('chevron-ai-chatbot').addEventListener('click', function
     const view = document.getElementById('view-ai-chatbot')     // Project's image container
     const image = document.getElementById('image-ai-chatbot')   // Project's image
 
-    projectDropDown(viewport,card,view,image)
+    chevron_ai_chatbot = projectDropDown(viewport,card,view,image,chevron_ai_chatbot)
 })
 
 let chevron_stock_prediction = true
@@ -19,17 +19,12 @@ document.getElementById('chevron-stock-prediction').addEventListener('click', fu
     const view = document.getElementById('view-stock-prediction')   // Project's image container
     const image = document.getElementById('image-stock-prediction') // Project's image
 
-    projectDropDown(viewport,card,view,image)
+    chevron_stock_prediction = projectDropDown(viewport,card,view,image,chevron_stock_prediction)
 })
 
-function projectDropDown(viewport,card,view,image){
-    // // console.log('chevron clicked')
-    // const viewport = window.innerWidth || document.documentElement.clientWidth; // Screen size
-    // const card = document.getElementById('card-stock-prediction')   // Project's content container
-    // const view = document.getElementById('view-stock-prediction')   // Project's image container
-    // const image = document.getElementById('image-stock-prediction') // Project's image
+function projectDropDown(viewport,card,view,image,chevron){
 
-    if(chevron_stock_prediction){
+    if(chevron){
         card.style.marginBottom = '0px';
         card.style.borderBottom = '0px';
 
@@ -47,7 +42,7 @@ function projectDropDown(viewport,card,view,image){
         image.style.height = 'auto';
         image.style.border = '1px solid black';
 
-        chevron_stock_prediction = false
+        return chevron = false
     }else{
         card.style.marginBottom = '25px';
         card.style.borderBottom = '1px solid rgb(90, 90, 90)';
@@ -60,6 +55,7 @@ function projectDropDown(viewport,card,view,image){
         image.style.height = '0px';
         image.style.border = '0px';
 
-        chevron_stock_prediction = true
+        return chevron = true
     }
+
 }

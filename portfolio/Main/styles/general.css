@@ -33,6 +33,11 @@ body {
     background-size: 55px 55px;
 }
 
+::-webkit-scrollbar {
+    width: 0.01px; /* Width of the scrollbar */
+    background-color: transparent; /* Transparent background */
+}
+
 footer {
     width:100%;
     margin-top: auto;
@@ -41,11 +46,26 @@ footer {
     justify-content: center;
     align-items: center;
 
-    font-weight: lighter;
-    color:#5a5a5a;
-
     box-sizing: border-box;
     /* border: 1px solid red; */
+}
+
+.copyright{
+    margin:0px 10px;
+}
+
+.copyright p{
+    font-weight: lighter;
+    color:#8a8a8a;
+}
+
+.extra a{
+    margin:0px 10px;
+}
+
+.extra a i{
+    font-weight: lighter;
+    color:#8a8a8a;
 }
 
 .introduction-name{
