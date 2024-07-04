@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/project.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
@@ -26,8 +27,14 @@
                     <div class="chevron" id="chevron-ai-chatbot">
                         <i class="fa fa-chevron-down"></i>
                     </div>
-                    <div class="github">
-                        <!-- <i class="fa fa-github"></i> -->
+                    <div class="github" id="github">
+                        <div class="popup" id="popup">
+                            <i class="material-icons" id="popup-icon">error</i>
+                            <p id="popup-text">Sorry, this Github is private</p>
+                        </div>
+                        <a id="private-github">
+                            <i class="fa fa-github"></i>
+                        </a>
                     </div>
                     <div class="website">
                         <a href="https://ubts.academy/en/" target="_blank">
@@ -40,7 +47,7 @@
             <li class="project-view" id="view-ai-chatbot">
                 <img class="project-image" id="image-ai-chatbot" src="styles/images/unicon.png" alt="Project Image">
                 <p class="project-extra-description" id="extra-description-ai-chatbot">
-                    A GenAI chatbot that integrates WitAI APIs for speech training to produce natural human-like speeches. Built with HTML, CSS, and JavaScript for Frontend. Java, Springboot, MongoDB and AWS for Backend.
+                    A GenAI chatbot that integrates Meta WitAI APIs for speech training to produce natural human-like speeches. Built with HTML, CSS, and JavaScript for Frontend. Java, Springboot, MongoDB and AWS for Backend.
                 </p>
             </li>
             
@@ -52,7 +59,7 @@
                         <i class="fa fa-chevron-down"></i>
                     </div>
                     <div class="github">
-                        <a href="https://github.com/Adam-Yun/2-coin-detection" target="_blank">
+                        <a href="https://github.com/Adam-Yun/5-stock-server" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
                     </div>
@@ -70,7 +77,115 @@
                     Produces stock price prediction by using LSTM-based predictive model to forecast stock prices in real-time, utilizing historical stock data fetched from Yahoo Finance API
                 </p>
             </li>
-            
+
+            <li class="project-card" id="card-coin-detection">
+                <h3 class="project-title">Coin Bank</h3>
+                <p class="project-description">IN PROGRESS : A webapp that calculates Malaysian coins by using Computer Vision Models to detect them.</p>
+                <div class="project-extra">
+                    <div class="chevron" id="chevron-coin-detection">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adam-Yun/2-coin-detection" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="website">
+                        <a href="https://coin-bank.netlify.app/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-view" id="view-coin-detection">
+                <img class="project-image" id="image-coin-detection" src="styles/images/coin-bank.png" alt="Project Image">
+                <p class="project-extra-description" id="extra-description-coin-detection">
+                    Using Computer Vision model to detect Malaysian coins and calculate them. Users can take image through the webapp where the image is stored with user's consent, to use for the model's training material. It helps in automating the inconvenience of calculating each coin manually.
+                </p>
+            </li>
+
+            <li class="project-card" id="card-singapore-pathfinder">
+                <h3 class="project-title">Singapore Pathfinder</h3>
+                <p class="project-description">IN PROGRESS : A webapp that produces routes of network for logistic drivers of Singapore </p>
+                <div class="project-extra">
+                    <div class="chevron" id="chevron-singapore-pathfinder">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adam-Yun/3-singapore-pathfinder" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="website">
+                        <a href="https://sg-pathfinder.netlify.app/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-view" id="view-singapore-pathfinder">
+                <img class="project-image" id="image-singapore-pathfinder" src="styles/images/singapore-pathfinder.png" alt="Project Image">
+                <p class="project-extra-description" id="extra-description-singapore-pathfinder">
+                    A webapp that produces a road of network for logistic drivers of Singapore. It produces the best path to take, most efficient path to tackle to reach every location in time, and considers path that also cannot be taken based on hazardous material restrictions for driver and civilian safety .
+                </p>
+            </li>
+
+            <li class="project-card" id="card-university-project">
+                <h3 class="project-title">University Webapp Instrument Project</h3>
+                <p class="project-description">A webapp that plays, visualise, and imitate songs</p>
+                <div class="project-extra">
+                    <div class="chevron" id="chevron-university-project">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adam-Yun/1-university-project" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="website">
+                        <a href="https://stock-server.netlify.app/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-view" id="view-university-project">
+                <img class="project-image" id="image-university-project" src="styles/images/webapp-instrument.png" alt="Project Image">
+                <p class="project-extra-description" id="extra-description-university-project">
+                    A university webapp project made to play four kinds of instruments a Piano, Kalimba, Flute, and Xylophone. It can also visualise sound waves using simple graphics and use the instrument to play a favourite existing songs of yours. 
+                </p>
+            </li>
+
+            <li class="project-card" id="card-mini-projects">
+                <h3 class="project-title">Mini Projects</h3>
+                <p class="project-description">A collection of mini projects</p>
+                <div class="project-extra">
+                    <div class="chevron" id="chevron-mini-projects">
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Adam-Yun/mini-projects" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="website">
+                        <a href="https://stock-server.netlify.app/" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="project-view" id="view-mini-projects">
+                <img class="project-image" id="image-mini-projects" src="styles/images/mini-projects.png" alt="Project Image">
+                <p class="project-extra-description" id="extra-description-mini-projects">
+                    Mini projects that I build to learn and explore some form of creativity or knowledge.
+                </p>
+            </li>
+
         </ul>
     </main>
 
