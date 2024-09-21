@@ -1,36 +1,37 @@
 
 <div class="chatbot-container" id="chatbotContainer">
     <div class="chatbot-chat-box" id="chatbotChatBox">
-        <div class="chat-box">
-            <div class="user-chat-bubble">
-                <p class="user-chat">
-                    Lorem ipsum dolor sit amet, 
-                </p>
-    
-                <p class="chatbot-chat">
-                    Lorem ipsum dolor sit amet, 
-                </p>
-    
-                <p class="user-chat">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-    
-                <p class="chatbot-chat">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-    
-                <p class="user-chat">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+        <div class="chat-box" id="chatBox">
         </div>
 
         <div class="text-box-container">
-            <input class="text">
-            <button class="send-text">
+            <input type="text" id="text" class="text">
+            <button id="sendText" class="send-text" onclick="sendMessage(this)">
                 Send
             </button>
         </div>
     </div>
-    <button id="chatbotButton" class="chatbot-btn" onclick="checkIconClicked()" value="true"></button>
+    <button type="button" id="chatbotButton" class="chatbot-btn" onclick="checkIconClicked()" value="true"></button>
 </div>
+
+
+
+                <!-- <p class="user-chat">
+                    Lorem ipsum dolor sit amet, 
+                </p>
+    
+                <p class="chatbot-chat">
+                    Lorem ipsum dolor sit amet, 
+                </p>
+    
+                <p class="user-chat">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+    
+                <p class="chatbot-chat">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+    
+                <p class="user-chat">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p> -->
