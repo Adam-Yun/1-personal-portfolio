@@ -98,7 +98,7 @@ button {
     width:80%;
     padding:10px;
     box-sizing: border-box;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .send-text{
