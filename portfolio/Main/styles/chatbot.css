@@ -1,19 +1,10 @@
-.chatbot-section{
-    width:min-content;
-    height:min-content;
-    position:fixed;
-    bottom:30px;
-    right:10px;
-
+input {
+    all: unset;
+    /* Optionally add back custom styling */
     box-sizing: border-box;
-    border: 1px solid red;
-}
-
-.chatbot-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 button {
@@ -26,6 +17,24 @@ button {
     text-decoration: none;
     box-shadow: none;
     cursor: pointer;
+}
+
+.chatbot-section{
+    width:min-content;
+    height:min-content;
+    position:fixed;
+    bottom:30px;
+    right:10px;
+
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.chatbot-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
 }
 
 .chatbot-btn{
@@ -54,7 +63,7 @@ button {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
-    overflow: scroll;
+    overflow: hidden;
 
     box-sizing: border-box;
     border:1px solid black;
@@ -67,14 +76,40 @@ button {
     opacity: 1;
 }
 
+.chat-box{
+    width:100%;
+    height:90%;
+
+    overflow:auto;
+
+    box-sizing: border-box;
+    border:1px solid rgb(0, 255, 0);
+}
+
+.text-box-container{
+    width:100%;
+    height:10%;
+
+    display: flex;
+
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+.text{
+    width:80%;
+}
+
+.send-text{
+    width:20%;
+}
+
 .user-chat-bubble{
     width:100%;
     height:min-content;
 
-    /* background-color: pink; */
-
     box-sizing: border-box;
-    border:1px solid rgb(0, 255, 0);
+    /* border:1px solid rgb(0, 255, 0); */
 }
 
 .user-chat{
