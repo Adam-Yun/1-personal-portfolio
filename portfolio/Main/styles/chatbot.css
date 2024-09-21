@@ -1,0 +1,114 @@
+.chatbot-section{
+    width:min-content;
+    height:min-content;
+    position:fixed;
+    bottom:30px;
+    right:10px;
+
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.chatbot-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    transition: none;
+    text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.chatbot-btn{
+    width:50px;
+    height:50px;
+    background-color: white;
+    
+    box-sizing: border-box;
+    outline:none;
+    border:1px solid black;
+}
+
+.chatbot-btn:active{
+    background-color: whitesmoke;
+    border:1px solid black;
+}
+
+.chatbot-chat-box{
+    /* z-index: -1; */
+    width:0px;
+    height:0px;
+
+    opacity: 0;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    overflow: scroll;
+
+    box-sizing: border-box;
+    border:1px solid black;
+    transition: height 0.4s ease-in-out,width 0.4s ease-in-out,opacity 0.1s ease-in-out;
+}
+
+.chatbot-chat-box-active{
+    width:350px;
+    height:450px;
+    opacity: 1;
+}
+
+.user-chat-bubble{
+    width:100%;
+    height:min-content;
+
+    /* background-color: pink; */
+
+    box-sizing: border-box;
+    border:1px solid rgb(0, 255, 0);
+}
+
+.user-chat{
+    /* padding:10px; */
+    margin:10px 10px 10px 50px;
+    padding:15px;
+    border-radius:10px;
+
+    background-color: rgb(0, 255, 125);
+    box-sizing: border-box;
+    border:1px solid black;
+}
+
+.chatbot-chat{
+    /* padding:10px; */
+    margin:10px 50px 10px 10px;
+    padding:15px;
+
+    border-radius:10px;
+
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border:1px solid black;
+}
+
+@media (min-width: 768px){
+
+    .chatbot-btn:hover{
+        cursor: pointer;
+        background-color: whitesmoke;
+        box-sizing: border-box;
+        border-radius: 2.5px;
+        
+        outline:none;
+        /* border:none; */
+    }
+}
