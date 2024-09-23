@@ -63,17 +63,19 @@ function sendMessage(button){
     // Send message to backend for chatbot to process
     response = postMessage(message.value)
 
+    // Create container for the new message
+    const userChatContainer = document.createElement('div');
+    userChatContainer.setAttribute('class','user-chat-container')
+
     // Create the new message
-    const chatBox = document.getElementById('chatBox');
     const userChat = document.createElement('p')
     userChat.setAttribute('class','user-chat')
     userChat.textContent = message.value;
 
-    // Add the new message
-    chatBox.appendChild(userChat)
-
-    // Dynamic scroll for new message
-    const container = document.getElementById('chat-box');
+    // Add new message and dynamic scroll for new message
+    const chatBox = document.getElementById('chatBox');
+    userChatContainer.appendChild(userChat)
+    chatBox.appendChild(userChatContainer)
     chatBox.scrollTop = chatBox.scrollHeight;
 
     // Clear the input value for user to send new message
@@ -83,15 +85,20 @@ function sendMessage(button){
 
 // function to send the user message to the chat
 function derbyResponse(message){
+
+  // Create container for the new message
+  const chatbotChatContainer = document.createElement('div');
+  chatbotChatContainer.setAttribute('class','chatbot-chat-container')
+
   // Create the new message
-  const chatBox = document.getElementById('chatBox');
   const chatbotChat = document.createElement('p')
   chatbotChat.setAttribute('class','chatbot-chat')
   chatbotChat.textContent = message
-  // Add the new message
-  chatBox.appendChild(chatbotChat)
-  // Dynamic scroll for new message
-  const container = document.getElementById('chat-box');
+
+  // Add new message and dynamic scroll for new message
+  const chatBox = document.getElementById('chatBox');
+  chatbotChatContainer.appendChild(chatbotChat)
+  chatBox.appendChild(chatbotChatContainer)
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
