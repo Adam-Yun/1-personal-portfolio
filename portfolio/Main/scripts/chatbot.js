@@ -61,7 +61,7 @@ function sendMessage(button){
   }else{
 
     // Send message to backend for chatbot to process
-    postMessage(message.value)
+    response = postMessage(message.value)
 
     // Create the new message
     const chatBox = document.getElementById('chatBox');
@@ -81,6 +81,20 @@ function sendMessage(button){
   }
 }
 
+// function to send the user message to the chat
+function derbyResponse(message){
+  // Create the new message
+  const chatBox = document.getElementById('chatBox');
+  const chatbotChat = document.createElement('p')
+  chatbotChat.setAttribute('class','chatbot-chat')
+  chatbotChat.textContent = message
+  // Add the new message
+  chatBox.appendChild(chatbotChat)
+  // Dynamic scroll for new message
+  const container = document.getElementById('chat-box');
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
 function postMessage(value){
   const data = {Data: value};
   fetch(url + '/postMessage', {
@@ -89,15 +103,21 @@ function postMessage(value){
     body: JSON.stringify(data)
   })
   .then(response => {
-    if (!response.ok) {throw new Error('Network response was not ok ' + response.statusText)}
-    return response.json()
+    if (!response.ok) {throw new Error('Network response was not ok ' + response.statusText)} 
+    else{
+      console.log({message:"Response : 200"})
+      return response.json()
+    }
   })
-  .then(data => {console.log(data)})
+  .then(data => {
+    console.log(data.message)
+    derbyResponse(data.message)
+  })
   .catch(error => console.error('Error:', error));
 }
 
 function testConnection() {
-  const data = {Data: "Hello from frontend!"};
+  const data = {Data: "Client Connection : Successful"};
   fetch(url + '/getNetworkConnection', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
