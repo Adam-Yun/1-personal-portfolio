@@ -21,3 +21,16 @@
     background-clip: text; /* Apply gradient to text */
     -webkit-text-stroke: 1px black;
 }
+
+#workTitle {
+    /* opacity: 1; Start hidden */
+    transition: opacity 0.5s ease; /* Transition effect */
+}
+
+.fade-in {
+    opacity: 1; /* Fade in */
+}
+
+.fade-out {
+    opacity: 0; /* Fade out */
+}
