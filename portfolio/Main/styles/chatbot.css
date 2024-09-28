@@ -20,6 +20,8 @@ button {
 }
 
 .chatbot-section{
+    z-index: 9999;
+
     width:min-content;
     height:min-content;
     position:fixed;
@@ -49,11 +51,10 @@ button {
 
 .chatbot-btn:active{
     background-color: whitesmoke;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 .chatbot-chat-box{
-    /* z-index: -1; */
     width:0px;
     height:0px;
 
