@@ -12,8 +12,6 @@ function changeTitle(){
             count = 0
         }
 
-        console.log(count)
-
         if(fade % 2 == 0){
             // console.log('Even')
             workTitle.classList.add('fade-out');
