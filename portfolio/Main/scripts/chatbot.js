@@ -2,7 +2,8 @@
 // To include chatbot html
 
 // Global variable to hold the link to backend
-const url = 'https://df25-175-209-149-13.ngrok-free.app';
+// const url = 'https://4db6-2001-f40-978-a2e6-6d75-23fe-ef7a-b8bb.ngrok-free.app';
+const url = 'https://four-derby-ai-chatbot-backend.onrender.com';
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("chatbot.html")
