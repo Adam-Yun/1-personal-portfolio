@@ -50,7 +50,6 @@ button {
 
     box-sizing: border-box;
     outline:none;
-    border:1.5px solid black;
 }
 
 .chatbot-btn:active{

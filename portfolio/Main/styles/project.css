@@ -1,182 +1,96 @@
-
-.main-view {
-    width: 100%;
-    flex-grow: 1; 
-    margin: 10px 0;
-
-    display: flex;
-
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-}
-
-.project-list {
-    width: 100%;
-    /* flex-grow: 1; */
-    padding-top: 10px;
+.main-view{
+    width:100%;
+    height:min-content;
+    margin-bottom:10px;
 
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    list-style: none;
 
     box-sizing: border-box;
-    /* border: 1px solid blue; */
 }
 
-.project-card{
-    width:70%;
-    min-height: 80px;
-    padding-bottom:15px;
-    margin-bottom: 25px;
+.project-list{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    width: 80%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.project{
+    height:auto;
+    box-sizing: border-box;
+    padding-bottom:5px;
+
+    border-bottom:2px solid black;
+    /* border:1px solid red; */
+}
+
+.project-title-container{
+    padding:10px 10px 5px 0px;
+    margin-bottom:5px;
 
     box-sizing: border-box;
     /* border:1px solid red; */
-    border-bottom:1px solid rgb(90, 90, 90);
-    /* border-radius: 10px; */
+    border-bottom:2px solid black;
 }
 
 .project-title{
-    margin-bottom:10px;
-
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-}
-
-.project-description{
-    font-size: 14px;
-    margin-bottom:10px;
-    
-    box-sizing: border-box;
-    /* border: 1px solid red; */
-}
-
-.project-extra{
-    width:100%;
-    height: 25px;
-
     display: flex;
     justify-content: start;
     align-items: center;
 
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    /* border:1px solid green; */
 }
 
-.chevron, .website, .github{
-    font-size: 18px;
-    width:20px;
-    height:20px;
+.project-description{
+    padding:5px 0px;
+}
 
-    display: flex;
-    justify-content: center;
+.project-preview-container{
+    width:100%;
+    height:min-content;
+
+    box-sizing: border-box;
+    /* border:1px solid green; */
+}
+
+.project-preview{
+    /* padding:10px; */
+
+    display:flex;
+    justify-content: start;
     align-items: center;
-}
-
-.chevron:hover, .website:hover, .github:hover{
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.github{
-    position:relative;
-    margin-left:auto;
 
     box-sizing: border-box;
     /* border:1px solid red; */
-}
-
-.popup{
-    width:max-content;
-    height: auto;
-    padding:2.5px;
-    margin-bottom: 70px;
-    border-radius: 2.5px;
-    opacity: 0;
-
-    background-color:rgb(150, 15, 15);
-    position: absolute;
-    display: none;
-    align-items: center;
-
-    box-sizing: border-box;
-    border:1px solid black;
-
-    transition: opacity 2s;
-}
-
-.popup p{
-    font-size: 10px;
-    color: #F3F3F3;
-    margin:1px;
-    margin-right:2px;
-}
-
-.popup i{
-    font-size: 20px; 
-    color: #ff0000;
-    margin:1px;
-}
-
-.website{
-    margin-left: 10px;
-}
-
-.project-view{
-    width:70%;
-    display: flex;
-    min-height: 0px;
-    margin-bottom: 25px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: min-height 0.5s ease-in-out;
-    
-    box-sizing: border-box;
-    /* border:1px solid red; */
-    /* border-bottom:1px solid rgb(90, 90, 90); */
 }
 
 .project-image{
     width:100%;
-    max-height:0px;
-    object-fit:contain;
+    height:auto;
 
     box-sizing: border-box;
-    /* transition: max-height 0.1s ease-in-out; */
-    /* border: 1px solid black; */
+    border:1px solid black;
 }
 
-.project-extra-description{
-    height:0px;         /* auto */
-    opacity: 0;         /* 1 */
-    margin:0px;         /* 10px */
-    font-size: 12px;    
-    line-height: 1.5;
-
-    /* border:1px solid red; */
+.unicon-chatbot-img{
+    width:50%;
 }
 
-@media (min-width: 768px){
+.stock-prediction-img{
+    
+}
 
+@media only screen and (min-width: 1279px) {
     .project-list{
-        padding-top:25px;
-    }
-
-    .project-card{
-        width:50%;
-    }
-
-    .project-view{
-        width:50%;
-        min-height: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
