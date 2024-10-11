@@ -3,7 +3,7 @@
 
 // Global variable to hold the link to backend
 const url = 'https://four-derby-ai-chatbot-backend.onrender.com';
-// const url = 'https://e3f3-113-211-106-54.ngrok-free.app';
+// const url = 'https://5937-113-211-118-50.ngrok-free.app';
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("chatbot.html")
@@ -103,12 +103,11 @@ function derbyResponse(message){
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-let chatHistory = "";
-// \nBot: ${bot_response}
+let chat_log = "";
+
 function postMessage(value){
-  const data = {Data: value};
-  console.log(data)
-  chatHistory += `\nUser: ${data['Data']}`;
+  const data = {Data: value, Chat: chat_log};
+  chat_log += `\nUser: ${value}`;
 
   fetch(url + '/postMessage', {
     method: 'POST',
@@ -123,9 +122,7 @@ function postMessage(value){
     }
   })
   .then(data => {
-
-    chatHistory += `\nAI: ${data.message}`
-    console.log(chatHistory)
+    chat_log += `\nAI: ${data.message}`
     derbyResponse(data.message)
   })
   .catch(error => console.error('Error:', error));
