@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 1000px){
+    .project-link-container{
+        font-size: 3vw;
+    }
+
     .project-title{
         font-size: 3vw;        
     }
