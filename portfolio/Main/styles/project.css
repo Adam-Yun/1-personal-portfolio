@@ -45,7 +45,27 @@
 }
 
 .project-link-container{
-    font-size: 2vw;
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.project-link-container a p{
+    margin: 0 10px 0 0;
+    padding:5px;
+    border:2px solid black;
+}
+
+.project-link-container a{
+    font-size: 1vw;
+    font-weight: bolder;
+    transition: font-size 0.1s ease-in-out;
+}
+
+.project-link-container a:hover{
+    cursor: pointer;
+    font-size: 1.25vw;
 }
 
 .project-title{
@@ -103,9 +123,3 @@
         font-size: 2.5vw;
     }
 }
-
-/* @media only screen and (min-width: 1279px) {
-    .project-title-container{
-        font-size:initial;
-    }
-} */
