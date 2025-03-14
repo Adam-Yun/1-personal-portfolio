@@ -7,22 +7,24 @@ export default function Home() {
 
       <nav className="p-4 flex justify-between items-center">
         <a className="text-xl flex justify-between items-center">Adam Yun</a>
-        <ol id="navbar-list" className="py-4 px-4 text-xl flex justify-center items-center">
-          <li className="">
-            <a>Home</a>
-          </li>
-          <li className="">
-            <a>Projects</a>
-          </li>
-          <li className="">
-            <a>Experience</a>
-          </li>
-          <li className="">
-            <a>About</a>
-          </li>
-          <li className="">
-            <a>Contact</a>
-          </li>
+        <ol id="navbarList" className="w-1/2 py-4 px-4 text-xl flex justify-center items-center">
+          <div id="listContainer" className="w-full flex justify-between">
+            <li className="">
+              <a>Home</a>
+            </li>
+            <li className="">
+              <a>Projects</a>
+            </li>
+            <li className="">
+              <a>Experience</a>
+            </li>
+            <li className="">
+              <a>About</a>
+            </li>
+            <li className="">
+              <a>Contact</a>
+            </li>
+          </div>
         </ol>
         <button className="text-xl flex justify-between items-center">English</button>
       </nav>

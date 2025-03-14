@@ -2,17 +2,18 @@
     box-sizing: border-box;
 }
 
-#navbar-list li{
-    margin:0rem 1rem;
+#navbarList li{
+    /* margin:0rem 1rem; */
+    /* border:1px solid red; */
 }
 
-#navbar-list li a:hover{
+#navbarList li a:hover{
     cursor:pointer;
-    color:aqua;
+    color:white;
 }
 
-#navbar-list li a:hover ~ a{
-    color:red;
+#listContainer:hover > :not(:hover){
+    color:grey;
 }
 
 nav{
@@ -25,5 +26,5 @@ nav{
 
 footer a{
     margin:0rem 0.5rem;
-    /* border:1px solid red; */
+    border:1px solid red;
 }
