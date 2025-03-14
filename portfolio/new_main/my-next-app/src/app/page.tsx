@@ -1,43 +1,49 @@
 import Image from "next/image";
+import "./page.css";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div id="divBody" className="w-screen h-screen">
+
+      <nav className="p-4 flex justify-between items-center">
+        <a className="text-xl flex justify-between items-center">Adam Yun</a>
+        <ol id="navbar-list" className="py-4 px-4 text-xl flex justify-center items-center">
+          <li className="">
+            <a>Home</a>
+          </li>
+          <li className="">
+            <a>Projects</a>
+          </li>
+          <li className="">
+            <a>Experience</a>
+          </li>
+          <li className="">
+            <a>About</a>
+          </li>
+          <li className="">
+            <a>Contact</a>
+          </li>
+        </ol>
+        <button className="text-xl flex justify-between items-center">English</button>
+      </nav>
+
+      <main id="main" className="p-4 flex justify-center items-center border-1 border-red-500">
+        <div id="sectionContainer" className="w-full max-w-7/10 p-4 border border-red-500">
+          <section>Me</section>
+          <section>Experience</section>
+          <section>Work</section>
+          <section>Personal Project</section>
+          <section>About Me</section>
+        </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>&copy; 2024 Adam Yun</p>
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>Github</p>
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>LinkedIn</p>
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>Email</p>
-        </a>
+
+      <footer className="px-2 py-4 flex justify-center items-center border-1 border-red-500">
+        <a target="_blank" rel="noopener noreferrer"> &copy; 2024 Adam Yun </a>
+        <a href="" target="_blank" rel="noopener noreferrer"> Github </a>
+        <a href="" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
+        <a href="" target="_blank" rel="noopener noreferrer"> Email </a>
       </footer>
+
     </div>
   );
 }
