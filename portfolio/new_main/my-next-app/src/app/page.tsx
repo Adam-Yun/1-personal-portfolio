@@ -5,10 +5,10 @@ import "./page.css";
 
 export default function Home() {
   return (
-    <div id="divBody" className="w-screen h-screen">
+    <div id="divBody" className="box-border">
       
-      <nav className="px-8 py-4 flex justify-between items-center border border-yellow-500">
-        <a className="text-xl flex justify-between items-center font-bold">A.Y.</a>
+      <nav className="px-8 py-4 flex justify-between items-center">
+        <a className="name text-xl flex justify-between items-center font-bold">A.Y.</a>
         <ol id="navbarList" className="w-1/2 py-4 px-4 text-xl flex justify-between items-center">
           <li className="">
             <a>Home</a>
@@ -29,13 +29,13 @@ export default function Home() {
         <button className="text-xl flex justify-between items-center">English</button>
       </nav>
 
-      <main id="main" className="p-4 flex justify-center items-center border-1 border-red-500">
-        <div id="sectionContainer" className="w-full max-w-7/10 p-4 border border-red-500">
-
+      <main id="main" className="p-4 flex justify-center items-center">
+        <div id="sectionContainer" className="w-full max-w-7/10 p-4">
+          {/* Introduction */}
           <section className="intro-section p-4 border border-zinc-800">
             <div className="flex justify-between items-center">
               <header>
-                <h2 className="font-bold text-4xl">Adam Yun</h2>
+                <h2 className="name font-bold text-4xl">Adam Yun</h2>
               </header>
               <div className="icons text-xl">
                 <i className="fa fa-github"></i>
@@ -53,48 +53,75 @@ export default function Home() {
               <p className="text-lg font-semibold">I'm Full-Stack Developer and I like to build.</p>
             </div>
           </section>
-
-          <section className="p-4 border border-zinc-800">
+          {/* Experience */}
+          <section className="p-4">
             <header>
-              <h2 className="font-bold text-4xl">Experience</h2>
+              <h2 className="font-bold text-4xl underline">Experience</h2>
             </header>
-            <ol className="project-list border border-red-500">
-              <li className="project">
-                <h3>
-                  DerbyGPT
+            <ol className="experience-list py-1">
+              <li className="experience">
+                <h3 className="experience-title text-blue-500 text-2xl font-semibold">
+                  NATT
                 </h3>
-                <p>
-                  A ChatGPT clone powered by Meta's Ollama3 Large Language Model, fine-tuned as an AI assistant. Built with Next.js, React, and TypeScript, and deployed on Vercel.
+                
+                <h4 className="experience-position text-lg font-semibold">
+                  Software Engineer
+                </h4>
+
+                <div className="experience-end-date text-sm flex justify-start items-center">
+                   <p><time>November, 2023</time> - Present</p>
+                </div>
+
+                <p className="experience-description text-lg font-medium">
+                  A description
                 </p>
               </li>
 
-              <li className="project">
-                <h3>
-                  DerbyGPT
+              <li className="experience">
+                <h3 className="experience-title text-blue-500 text-2xl font-semibold">
+                  UBTS Academy
                 </h3>
-                <p>
-                  A ChatGPT clone powered by Meta's Ollama3 Large Language Model, fine-tuned as an AI assistant. Built with Next.js, React, and TypeScript, and deployed on Vercel.
+                
+                <h4 className="experience-position text-lg font-semibold">
+                  Customer Service Representative
+                </h4>
+
+                <div className="experience-end-date text-sm">
+                  <p><time>July, 2023</time> - <time>November, 2023</time></p>
+                </div>
+
+                <p className="experience-description text-lg font-medium">
+                  A description
                 </p>
               </li>
 
-              <li className="project">
-                <h3>
-                  DerbyGPT
+              <li className="experience">
+                <h3 className="experience-title text-blue-500 text-2xl font-semibold">
+                  BMW FM Autohaus
                 </h3>
-                <p>
-                  A ChatGPT clone powered by Meta's Ollama3 Large Language Model, fine-tuned as an AI assistant. Built with Next.js, React, and TypeScript, and deployed on Vercel.
+                
+                <h4 className="experience-position text-lg font-semibold">
+                  IT Intern
+                </h4>
+
+                <div className="experience-end-date text-sm">
+                  <p><time>February, 2018</time> - <time>July, 2018</time></p>
+                </div>
+
+                <p className="experience-description text-lg font-medium">
+                  A description
                 </p>
               </li>
             </ol>
           </section>
-
-          <section className="p-4 border border-zinc-800">
+          {/* Projects */}
+          <section className="p-4 border underline border-zinc-800">
             <header>
               <h2 className="font-bold text-4xl">Projects</h2>
             </header>
           </section>
-
-          <section className="p-4 border border-zinc-800">
+          {/* About Me */}
+          <section className="p-4 border underline border-zinc-800">
             <header>
               <h2 className="font-bold text-4xl">About Me</h2>
             </header>

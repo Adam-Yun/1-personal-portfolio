@@ -17,13 +17,22 @@ nav{
     border-radius: 10px;
 }
 
-.project-list li{
-    
+.name{
+    background-image:linear-gradient(rgb(0, 255, 85) 0%, rgb(0, 30, 255)); 
+    color:transparent; 
+    background-clip: text;
+}
+
+.experience-list li{
+    /* margin:1.5rem 0rem; */
+    padding:20px;
+    border-radius: 10px;
+    /* border: 1px solid #27272a; */
 }
 
 .icons i{
     margin:5px;
-    padding:10 10px;
+    padding:10px;
     border-radius: 10px;
     border: 1px solid #27272a;
 }
@@ -32,3 +41,42 @@ footer a{
     margin:0rem 0.5rem;
     border:1px solid red;
 }
+
+.experience-list{
+    position: relative;
+}
+
+.experience-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  /* The circle thing */
+  .experience-list li::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0062ff;
+    border:2px solid white;
+  }
+  
+  /* The line thing */
+  .experience-list li::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: -5.9px;
+    top: 32px;
+    width: 2px;
+    height: calc(100% - 0px);
+    background-color: white;
+  }
+
+  .experience-list li:last-child::after {
+    height: 0%;
+  }
