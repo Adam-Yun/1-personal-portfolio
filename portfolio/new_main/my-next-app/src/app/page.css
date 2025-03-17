@@ -2,18 +2,10 @@
     box-sizing: border-box;
 }
 
-#navbarList li{
-    /* margin:0rem 1rem; */
-    /* border:1px solid red; */
-}
-
-#navbarList li a:hover{
+#navbarList li:hover{
     cursor:pointer;
-    color:white;
-}
-
-#listContainer:hover > :not(:hover){
-    color:grey;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 nav{
@@ -21,7 +13,19 @@ nav{
 }
 
 #sectionContainer section{
-    border:1px solid red;
+    margin:2rem 0px;
+    border-radius: 10px;
+}
+
+.project-list li{
+    
+}
+
+.icons i{
+    margin:5px;
+    padding:10 10px;
+    border-radius: 10px;
+    border: 1px solid #27272a;
 }
 
 footer a{
