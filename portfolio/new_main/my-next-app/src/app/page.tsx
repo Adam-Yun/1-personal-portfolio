@@ -53,6 +53,7 @@ export default function Home() {
               <p className="text-lg font-semibold">I'm Full-Stack Developer and I like to build.</p>
             </div>
           </section>
+
           {/* Experience */}
           <section className="p-4">
             <header>
@@ -114,16 +115,105 @@ export default function Home() {
               </li>
             </ol>
           </section>
+
           {/* Projects */}
-          <section className="p-4 border underline border-zinc-800">
+          <section className="p-4 border border-zinc-800">
             <header>
-              <h2 className="font-bold text-4xl">Projects</h2>
+              <h2 className="font-bold underline text-4xl">Projects</h2>
             </header>
+
+            {/* Project List */}
+            <ol className="project-list">
+              <li className="project">
+                <div className="project-info-container">
+                  <h3>
+                    Project Title
+                  </h3>
+                  {/* Project Tech Stack List */}
+                  <ol className="project-tech-stack-list">
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                  </ol>
+                  <p>The Project Description</p>
+                  <p>Learn More</p>
+                </div>
+              </li>
+
+              <li className="project">
+                <div className="project-info-container">
+                  <h3>
+                    Project Title
+                  </h3>
+                  {/* Project Tech Stack List */}
+                  <ol className="project-tech-stack-list">
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                  </ol>
+                  <p>The Project Description</p>
+                  <p>Learn More</p>
+                </div>
+              </li>
+
+              <li className="project">
+                <div className="project-info-container">
+                  <h3>
+                    Project Title
+                  </h3>
+                  {/* Project Tech Stack List */}
+                  <ol className="project-tech-stack-list">
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Python
+                      </p>
+                    </li>
+                  </ol>
+                  <p>The Project Description</p>
+                  <p>Learn More</p>
+                </div>
+              </li>
+            </ol>
           </section>
+
           {/* About Me */}
-          <section className="p-4 border underline border-zinc-800">
+          <section className="p-4 border border-zinc-800">
             <header>
-              <h2 className="font-bold text-4xl">About Me</h2>
+              <h2 className="font-bold underline text-4xl">About Me</h2>
             </header>
           </section>
         </div>
