@@ -50,6 +50,14 @@ nav{
     overflow: hidden;
 }
 
+.project:hover{
+    cursor:pointer;
+}
+
+#projectLink{
+    height:100px;
+}
+
 .invert-shadow{
     position: absolute;
     width:100%;
@@ -70,15 +78,19 @@ nav{
 
 .project-info-container{
     width:100%;
+    height:auto;
     position:absolute;
-    bottom:-5%;    
-    border:1px solid yellow;
+    bottom:calc(-2vw + -1rem);    
+    /* border:1px solid yellow; */
     background-image: linear-gradient(to top, rgb(50, 50, 50) 0%, rgba(50, 50, 50, 0) 100%);
     transition:bottom 0.3s ease-in-out;
 }
 
-.project:hover{
-    cursor:pointer;
+.project-info-container *{
+    width:auto;
+    height:2vw;
+    font-size: 1vw;
+    /* border:1px solid red; */
 }
 
 .project:hover .project-info-container{
@@ -91,7 +103,7 @@ nav{
 
 footer a{
     margin:0rem 0.5rem;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .experience-list{

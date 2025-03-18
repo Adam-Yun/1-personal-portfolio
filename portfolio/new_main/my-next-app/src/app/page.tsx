@@ -31,7 +31,7 @@ export default function Home() {
       </nav>
 
       <main id="main" className="p-4 flex justify-center items-center">
-        <div id="sectionContainer" className="w-full max-w-7/10 p-4">
+        <div id="sectionContainer" className="w-full max-w-6/10 p-4">
           {/* Introduction */}
           <section className="intro-section p-4 border border-zinc-800">
             <div className="flex justify-between items-center">
