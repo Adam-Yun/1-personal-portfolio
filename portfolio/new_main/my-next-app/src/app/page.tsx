@@ -1,6 +1,8 @@
-import "./page.css";
+"use client";
 
-// TODO: I dont really like that the hover not change the font the grey from even the white space between the navbar choices
+import Image from 'next/image';
+import "./page.css";
+import generateProjects from './project';
 
 export default function Home() {
   return (
@@ -49,7 +51,7 @@ export default function Home() {
             </div>
 
             <div className="pb-1.5">
-              <p className="text-lg font-semibold">I'm Full-Stack Developer and I like to build.</p>
+              <p className="text-lg font-semibold">I&#39;m Full-Stack Developer and I like to build.</p>
             </div>
           </section>
 
@@ -123,37 +125,8 @@ export default function Home() {
 
             {/* Project List */}
             <ol className="project-list">
-              
-              <li className="project w-100% h-100">
-                <Image src="images/unicon.png" alt="Project Unicon Image" width={500} height={500}/>
-                <div className="invert-shadow"></div>
-                <div className="project-info-container">
-                  <h3>
-                    Project Title
-                  </h3>
-                  {/* Project Tech Stack List */}
-                  <ol className="project-tech-stack-list flex justify-start items-center">
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                  </ol>
-                  <p>The Project Description</p>
-                  <p>Learn More</p>
-                </div>
-              </li>
-
+              {/* A Project */}
+              {generateProjects(2)}
             </ol>
           </section>
 
