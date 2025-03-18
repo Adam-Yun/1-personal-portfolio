@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./page.css";
 
 // TODO: I dont really like that the hover not change the font the grey from even the white space between the navbar choices
@@ -124,13 +123,16 @@ export default function Home() {
 
             {/* Project List */}
             <ol className="project-list">
-              <li className="project">
+              
+              <li className="project w-100% h-100">
+                <Image src="images/unicon.png" alt="Project Unicon Image" width={500} height={500}/>
+                <div className="invert-shadow"></div>
                 <div className="project-info-container">
                   <h3>
                     Project Title
                   </h3>
                   {/* Project Tech Stack List */}
-                  <ol className="project-tech-stack-list">
+                  <ol className="project-tech-stack-list flex justify-start items-center">
                     <li>
                       <p>
                         Python
@@ -152,61 +154,6 @@ export default function Home() {
                 </div>
               </li>
 
-              <li className="project">
-                <div className="project-info-container">
-                  <h3>
-                    Project Title
-                  </h3>
-                  {/* Project Tech Stack List */}
-                  <ol className="project-tech-stack-list">
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                  </ol>
-                  <p>The Project Description</p>
-                  <p>Learn More</p>
-                </div>
-              </li>
-
-              <li className="project">
-                <div className="project-info-container">
-                  <h3>
-                    Project Title
-                  </h3>
-                  {/* Project Tech Stack List */}
-                  <ol className="project-tech-stack-list">
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Python
-                      </p>
-                    </li>
-                  </ol>
-                  <p>The Project Description</p>
-                  <p>Learn More</p>
-                </div>
-              </li>
             </ol>
           </section>
 
