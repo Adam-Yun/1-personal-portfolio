@@ -40,7 +40,7 @@ nav{
 .project{
     position:relative;
     width:100%;
-    margin:2rem 0;
+    margin-top:1.5rem;
     display:flex;
     justify-content: start;
     align-items: end;
@@ -50,12 +50,12 @@ nav{
     overflow: hidden;
 }
 
-.project:hover{
-    cursor:pointer;
+.project-list > :last-child {
+    margin-bottom:0.5rem;
 }
 
-#projectLink{
-    height:100px;
+.project:hover{
+    cursor:pointer;
 }
 
 .invert-shadow{
@@ -81,8 +81,7 @@ nav{
     height:auto;
     position:absolute;
     bottom:calc(-2vw + -1rem);    
-    /* border:1px solid yellow; */
-    background-image: linear-gradient(to top, rgb(50, 50, 50) 0%, rgba(50, 50, 50, 0) 100%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 10%, rgba(0, 0, 0, 0) 100%);
     transition:bottom 0.3s ease-in-out;
 }
 
@@ -90,7 +89,6 @@ nav{
     width:auto;
     height:2vw;
     font-size: 1vw;
-    /* border:1px solid red; */
 }
 
 .project:hover .project-info-container{
@@ -101,10 +99,34 @@ nav{
     margin-left:0.5rem;
 }
 
+.project-title{
+    width:max-content;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+
+.project-tech-stack-list li p, .project-info-container a p{
+    padding:10px;
+    border-radius: 5px;
+    /* color:black; */
+    /* background-color: #27272a; */
+    background-color: rgb(20, 20, 20);
+}
+
+
+.project-tech-stack-list li p, .project-info-container a p, .project-title{
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.8), /* Main deep shadow */
+        0 6px 6px rgba(255, 255, 255, 0.1) inset, /* Soft inner light */
+        0 -2px 4px rgba(255, 255, 255, 0.05) inset; /* Subtle top inner highlight */
+}
+
 footer a{
     margin:0rem 0.5rem;
     /* border:1px solid red; */
 }
+
+/* Dont touch stuff below */
 
 .experience-list{
     position: relative;
