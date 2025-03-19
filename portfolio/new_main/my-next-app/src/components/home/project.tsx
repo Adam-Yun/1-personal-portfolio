@@ -1,4 +1,4 @@
-// htmlContent.tsx
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -25,7 +25,7 @@ const projectSection = (
                         <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
                         <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
                     </ol>
-                    <p className="m-4 flex justify-start items-center">A ChatGPT clone powered by Meta's Ollama3 Large Language Model, fine-tuned as an AI assistant. Built with Next.js, React, and TypeScript, and deployed on Vercel.</p>
+                    <p className="m-4 flex justify-start items-center">A ChatGPT clone powered by Meta&#39;s Ollama3 Large Language Model, fine-tuned as an AI assistant. Built with Next.js, React, and TypeScript, and deployed on Vercel.</p>
                     <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
                 </div>
             </li>
@@ -42,7 +42,7 @@ const projectSection = (
                         <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
                         <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
                     </ol>
-                    <p className="m-4 flex justify-start items-center">A chatbot powered by Meta's Ollama3 Large Language Model, accessed through Groq's API. Built with JavaScript, HTML, and CSS, and deployed on Netlify.</p>
+                    <p className="m-4 flex justify-start items-center">A chatbot powered by Meta&#39;s Ollama3 Large Language Model, accessed through Groq&#39;s API. Built with JavaScript, HTML, and CSS, and deployed on Netlify.</p>
                     <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
                 </div>
             </li>
