@@ -26,7 +26,7 @@ export default function Home() {
             <a>Contact</a>
           </li>
         </ol>
-        <button className="text-xl flex justify-between items-center">English</button>
+        <button className="text-xs flex justify-between items-center">Language Options Coming Soon!</button>
       </nav>
 
       <main id="main" className="p-4 flex justify-center items-center">
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="px-2 py-4 flex justify-center items-center border-1 border-red-500">
+      <footer className="px-2 py-4 flex justify-center items-center">
         <a target="_blank" rel="noopener noreferrer"> &copy; 2024 Adam Yun </a>
         <a href="" target="_blank" rel="noopener noreferrer"> Github </a>
         <a href="" target="_blank" rel="noopener noreferrer"> LinkedIn </a>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const projectSection = (  
     // Project Section
-    <section className="p-4 border border-zinc-800">
+    <section className="p-4">
         <header>
             <h2 className="font-bold text-4xl">Projects</h2>
         </header>
