@@ -1,0 +1,12 @@
+.name{
+    background-image:linear-gradient(rgb(0, 255, 85) 0%, rgb(0, 30, 255)); 
+    color:transparent; 
+    background-clip: text;
+}
+
+.icons i{
+    margin:5px;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid #27272a;
+}

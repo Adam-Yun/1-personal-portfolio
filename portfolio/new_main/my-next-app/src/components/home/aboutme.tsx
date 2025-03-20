@@ -1,4 +1,4 @@
-import "./aboutme.css";
+import "./styles/aboutme.css";
 import Image from 'next/image';
 
 const aboutMeSection = (  

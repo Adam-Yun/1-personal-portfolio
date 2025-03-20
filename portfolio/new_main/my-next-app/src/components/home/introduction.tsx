@@ -1,3 +1,5 @@
+import "./styles/introduction.css";
+
 const introductionSection = (
     <section className="intro-section p-4 border border-zinc-800">
             <div className="flex justify-between items-center">

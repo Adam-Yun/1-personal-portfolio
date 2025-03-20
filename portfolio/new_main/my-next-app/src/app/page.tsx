@@ -3,34 +3,16 @@ import introductionSection from "../components/home/introduction";
 import experienceSection from "../components/home/experience";
 import projectSection from "../components/home/project";
 import aboutMeSection from "../components/home/aboutme";
+import navbar from "../components/navigation/navbar"
 export default function Home() {
   return (
     <div id="divBody">
       
-      <nav className="p-4 flex justify-between items-center">
-        <a className="name ml-8 text-2xl flex justify-center items-center font-bold">AY</a>
-        <ol id="navbarList" className="w-full mx-40  py-4 px-4 text-xl flex justify-between items-center">
-          <li className="">
-            <a>Home</a>
-          </li>
-          <li className="">
-            <a>Projects</a>
-          </li>
-          <li className="">
-            <a>Experience</a>
-          </li>
-          <li className="">
-            <a>About</a>
-          </li>
-          <li className="">
-            <a>Contact</a>
-          </li>
-        </ol>
-        <button className="text-xs mr-8 flex justify-between items-center">Language Options Coming Soon!</button>
-      </nav>
+      {/* Navigation Bar */}
+      {navbar}
 
       <main id="main" className="p-4 flex justify-center items-center">
-        <div id="sectionContainer" className="w-full max-w-5/10 p-4">
+        <div id="sectionContainer" className="md:max-w-5/10 md:p-4">
           {/* Introduction */}
           {introductionSection}
 
@@ -55,3 +37,13 @@ export default function Home() {
     </div>
   );
 }
+
+/**
+ * 
+ * responsive design layout
+sm:	640px	Small screens (phones in landscape, tablets)
+md:	768px	Medium screens (tablets)
+lg:	1024px	Large screens (laptops)
+xl:	1280px	Extra-large (desktops)
+2xl:	1536px	Very large screens
+ */

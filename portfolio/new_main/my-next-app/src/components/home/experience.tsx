@@ -1,3 +1,5 @@
+import "./styles/experience.css";
+
 const experience = (
     <section className="p-4">
     <header>
