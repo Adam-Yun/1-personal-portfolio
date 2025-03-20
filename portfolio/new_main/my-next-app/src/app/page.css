@@ -13,9 +13,6 @@ footer a{
 }
 
 @media (min-width: 768px) {
-    #sectionContainer{
-        
-    }
 
     #sectionContainer section{
         margin:2rem 0px;

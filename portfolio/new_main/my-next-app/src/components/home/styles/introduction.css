@@ -9,4 +9,21 @@
     padding:10px;
     border-radius: 10px;
     border: 1px solid #27272a;
+    /* border:1px solid red; */
+}
+.icons > :first-child{
+    margin-left:0px;
+}
+
+/* .icons i:not(:first-child){
+
+} */
+
+@media (min-width: 768px){
+    .icons i{
+        margin:5px;
+        padding:10px;
+        border-radius: 10px;
+        border: 1px solid #27272a;
+    }
 }

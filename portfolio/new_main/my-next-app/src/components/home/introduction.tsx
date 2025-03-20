@@ -2,7 +2,7 @@ import "./styles/introduction.css";
 
 const introductionSection = (
     <section className="intro-section p-4 border border-zinc-800">
-            <div className="flex justify-between items-center">
+            <div className="md:flex md:justify-between md:items-center">
               <header>
                 <h2 className="name font-bold text-4xl">Adam Yun</h2>
               </header>
