@@ -20,19 +20,3 @@
 .description-container{
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
-
-
-@media (min-width: 768px){
-}
-
-
-/* 
-    <div className="about-me-container mt-4 flex border border-red-500">
-      <div className="about-me-info max-w-[150px] flex flex-col justify-center items-center p-1 border border-red-500">
-        <div className="relative flex justify-center items-center overflow-hidden rounded-full border border-zinc-800">
-          <Image className="profile-image" alt="Profile Image" src="/images/memoji.jpg" width={5000} height={5000} priority></Image>
-          <div className="profile-image-invert-shadow"></div>
-        </div>
-        <p className="text-xl font-bold mt-2 flex justify-center items-center">Adam Yun</p>
-      </div>
-*/

@@ -1,7 +1,8 @@
+"use client";
 import "./page.css";
 import introductionSection from "../components/home/introduction";
 import experienceSection from "../components/home/experience";
-import projectSection from "../components/home/project";
+import ProjectSection from "../components/home/project";
 import aboutMeSection from "../components/home/aboutme";
 import navbar from "../components/navigation/navbar"
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
           {experienceSection}
 
           {/* Projects */}
-          {projectSection}
+          <ProjectSection/>
 
           {/* About Me */}
           {aboutMeSection}

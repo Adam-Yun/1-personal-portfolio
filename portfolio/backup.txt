@@ -1,0 +1,170 @@
+
+            {/* Derby Chatbot */}
+            <li className="project w-100% h-100%">
+                <Image className="project-image" src="/images/derby-ai.png" alt="Project Unicon Image" width={5000} height={5000} priority/>
+                <div className="invert-shadow"></div>
+                <div className="project-info-container">
+                <h3 className="project-title m-4"> <p className="p-2 flex justify-start items-center font-bold"> Derby Chatbot </p> </h3>
+                    {/* Project Tech Stack List */}
+                    <ol className="m-4 project-tech-stack-list flex justify-start items-center">
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                    </ol>
+                    <p className="m-4 flex justify-start items-center">A chatbot powered by Meta&#39;s Ollama3 Large Language Model, accessed through Groq&#39;s API. Built with JavaScript, HTML, and CSS, and deployed on Netlify.</p>
+                    <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
+                </div>
+            </li>
+
+            {/* Unicon */}
+            <li className="project w-100% h-100%">
+                <Image className="project-image" src="/images/unicon.png" alt="Project Unicon Image" width={5000} height={5000} priority/>
+                <div className="invert-shadow"></div>
+                <div className="project-info-container">
+                <h3 className="project-title m-4"> <p className="p-2 flex justify-start items-center font-bold"> Unicon </p> </h3>
+                    {/* Project Tech Stack List */}
+                    <ol className="m-4 project-tech-stack-list flex justify-start items-center">
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                    </ol>
+                    <p className="m-4 flex justify-start items-center">WitAI-integrated logistics chatbot, developed in Java/Spring Boot and hosted on AWS EC2.</p>
+                    <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
+                </div>
+            </li>
+
+            {/* Pathfinder */}
+            <li className="project w-100% h-100%">
+                <Image className="project-image" src="/images/pathfinder.png" alt="Project Unicon Image" width={5000} height={5000} priority/>
+                <div className="invert-shadow"></div>
+                <div className="project-info-container">
+                <h3 className="project-title m-4"> <p className="p-2 flex justify-start items-center font-bold"> Pathfinder </p> </h3>
+                    {/* Project Tech Stack List */}
+                    <ol className="m-4 project-tech-stack-list flex justify-start items-center">
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                    </ol>
+                    <p className="m-4 flex justify-start items-center">A web app that optimizes delivery routes and balances driver workloads for Singaporean logistics operations.</p>
+                    <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
+                </div>
+            </li>
+
+            {/* Camping Landing Page */}
+            <li className="project w-100% h-100%">
+                <Image className="project-image" src="/images/tombotuon-hill-camping-ground.png" alt="Project Unicon Image" width={5000} height={5000} priority/>
+                <div className="invert-shadow"></div>
+                <div className="project-info-container">
+                <h3 className="project-title m-4"> <p className="p-2 flex justify-start items-center font-bold"> Camping Landing Page </p> </h3>
+                    {/* Project Tech Stack List */}
+                    <ol className="m-4 project-tech-stack-list flex justify-start items-center">
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                    </ol>
+                    <p className="m-4 flex justify-start items-center">A Landing Page for a camping website, built with vanilla web tech stack, JS, HTML and CSS.</p>
+                    <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
+                </div>
+            </li>
+
+            {/* Lambda Vibe */}
+            <li className="project w-100% h-100%">
+                <Image className="project-image" src="/images/webapp-instrument.png" alt="Project Unicon Image" width={5000} height={5000} priority/>
+                <div className="invert-shadow"></div>
+                <div className="project-info-container">
+                <h3 className="project-title m-4"> <p className="p-2 flex justify-start items-center font-bold"> Lambda Vibe </p> </h3>
+                    {/* Project Tech Stack List */}
+                    <ol className="m-4 project-tech-stack-list flex justify-start items-center">
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                        <li> <p className="tech-stack flex justify-center items-center"> Python </p> </li>
+                    </ol>
+                    <p className="m-4 flex justify-start items-center">A university project that plays, visualise songs and instruments, built with HTML, CSS, and Typescript.</p>
+                    <a className="m-4 flex justify-start items-center"><p className="p-2 flex justify-start items-center rounded-[5px]">Learn More</p></a>
+                </div>
+            </li>
+
+
+
+
+
+/* .project{
+    position:relative;
+    width:100%;
+    margin-top:1.5rem;
+    display:flex;
+    justify-content: start;
+    align-items: end;
+    transition:background-size 0.3s ease-in-out;
+    border:1px solid #27272a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-list > :last-child {
+    margin-bottom:0.5rem;
+}
+
+.project:hover{
+    cursor:pointer;
+}
+
+.invert-shadow{
+    position: absolute;
+    width:100%;
+    height:100%;
+    box-shadow: inset 0 0 20px rgb(50, 50, 50);
+}
+
+.project-image{
+    width:100%;
+    height:auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover .project-image{
+    transform: scale(1.1);
+}
+
+.project-info-container{
+    width:100%;
+    height:auto;
+    position:absolute;
+    bottom:calc(-2vw + -1rem);    
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 10%, rgba(0, 0, 0, 0) 100%);
+    transition:bottom 0.3s ease-in-out;
+}
+
+.project-info-container *{
+    width:auto;
+    height:2vw;
+    font-size: 1vw;
+}
+
+.project:hover .project-info-container{
+    bottom:0%;
+}
+
+.project-tech-stack-list li:not(:first-child) {
+    margin-left:0.5rem;
+}
+
+.project-title{
+    width:max-content;
+    background-color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+
+.project-tech-stack-list li p, .project-info-container a p{
+    padding:10px;
+    border-radius: 5px;
+    background-color: rgb(20, 20, 20);
+}
+
+.project-tech-stack-list li p, .project-info-container a p, .project-title{
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.8),
+        0 6px 6px rgba(255, 255, 255, 0.1) inset,
+        0 -2px 4px rgba(255, 255, 255, 0.05) inset;
+} */
