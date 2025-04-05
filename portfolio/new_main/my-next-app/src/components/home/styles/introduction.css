@@ -9,15 +9,15 @@
     padding:10px;
     border-radius: 10px;
     border: 1px solid #27272a;
-    /* border:1px solid red; */
 }
+
 .icons > :first-child{
     margin-left:0px;
 }
 
-/* .icons i:not(:first-child){
-
-} */
+.icons i:active{
+    border:1px solid white;
+}
 
 @media (min-width: 768px){
     .icons i{
@@ -25,5 +25,10 @@
         padding:10px;
         border-radius: 10px;
         border: 1px solid #27272a;
+    }
+
+    .icons i:hover{
+        cursor: pointer;
+        border:1px solid white;
     }
 }
