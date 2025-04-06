@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+#sectionContainer section{
+    margin:2rem 0px;
+    border-radius: 10px;
+}
+
+footer a{
+    margin:0rem 0.5rem;
+    /* border:1px solid red; */
+}
+
+@media (min-width: 768px) {
+
+    #sectionContainer section{
+        margin:2rem 0px;
+        border-radius: 10px;
+    }
+}
