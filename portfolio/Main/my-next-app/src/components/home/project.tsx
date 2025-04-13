@@ -36,9 +36,11 @@ const ProjectSection = () => {
                         </h3>
 
                         <ol className="project-tech-stack-list">
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
+                            <li> <p className="tech-stack"> TypeScript </p> </li>
+                            <li> <p className="tech-stack"> JavaScript </p> </li>
+                            <li> <p className="tech-stack"> Next.Js </p> </li>
+                            <li> <p className="tech-stack"> CrewAI </p> </li>
+                            <li> <p className="tech-stack"> Vercel </p> </li>
                         </ol>
 
                         <p id="projectDescription" className="project-description">A ChatGPT clone powered by Meta&#39;s Ollama3 Large Language Model, fine-tuned as an AI assistant. Built with Next.js, React, and TypeScript, and deployed on Vercel.</p>
@@ -56,9 +58,12 @@ const ProjectSection = () => {
                         </h3>
 
                         <ol className="project-tech-stack-list">
+                            <li> <p className="tech-stack"> TypeScript </p> </li>
+                            <li> <p className="tech-stack"> JavaScript </p> </li>
                             <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
+                            <li> <p className="tech-stack"> Next.Js </p> </li>
+                            <li> <p className="tech-stack"> CrewAI </p> </li>
+                            <li> <p className="tech-stack"> Vercel </p> </li>
                         </ol>
 
                         <p className="project-description">A chatbot powered by Meta&#39;s Ollama3 Large Language Model, accessed through Groq&#39;s API. Built with JavaScript, HTML, and CSS, and deployed on Netlify.</p>
@@ -76,9 +81,14 @@ const ProjectSection = () => {
                         </h3>
 
                         <ol className="project-tech-stack-list">
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
+                            <li> <p className="tech-stack"> HTML </p> </li>
+                            <li> <p className="tech-stack"> CSS </p> </li>
+                            <li> <p className="tech-stack"> JavaScript </p> </li>
+                            <li> <p className="tech-stack"> Java </p> </li>
+                            <li> <p className="tech-stack"> Spring Boot </p> </li>
+                            <li> <p className="tech-stack"> WitAI </p> </li>
+                            <li> <p className="tech-stack"> MongoDB </p> </li>
+                            <li> <p className="tech-stack"> AWS EC2 </p> </li>
                         </ol>
 
                         <p id="projectDescription" className="project-description">WitAI-integrated logistics chatbot, developed in Java/Spring Boot and hosted on AWS EC2.</p>
@@ -96,9 +106,11 @@ const ProjectSection = () => {
                         </h3>
 
                         <ol className="project-tech-stack-list">
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
+                            <li> <p className="tech-stack"> HTML </p> </li>
+                            <li> <p className="tech-stack"> CSS </p> </li>
+                            <li> <p className="tech-stack"> JavaScript </p> </li>
+                            <li> <p className="tech-stack"> Leaflet </p> </li>
+                            <li> <p className="tech-stack"> Vercel </p> </li>
                         </ol>
 
                         <p id="projectDescription" className="project-description">A web app that optimizes delivery routes and balances driver workloads for Singaporean logistics operations.</p>
@@ -116,9 +128,10 @@ const ProjectSection = () => {
                         </h3>
 
                         <ol className="project-tech-stack-list">
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
+                            <li> <p className="tech-stack"> HTML </p> </li>
+                            <li> <p className="tech-stack"> CSS </p> </li>
+                            <li> <p className="tech-stack"> JavaScript </p> </li>
+                            <li> <p className="tech-stack"> Netlify </p> </li>
                         </ol>
 
                         <p id="projectDescription" className="project-description">A Landing Page for a camping website, built with vanilla web tech stack, JS, HTML and CSS.</p>
@@ -136,9 +149,9 @@ const ProjectSection = () => {
                         </h3>
 
                         <ol className="project-tech-stack-list">
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
-                            <li> <p className="tech-stack"> Python </p> </li>
+                            <li> <p className="tech-stack"> HTML </p> </li>
+                            <li> <p className="tech-stack"> CSS </p> </li>
+                            <li> <p className="tech-stack"> TypeScript </p> </li>
                         </ol>
 
                         <p id="projectDescription" className="project-description">A university project that plays, visualise songs and instruments, built with HTML, CSS, and Typescript.</p>
