@@ -35,7 +35,7 @@ const navbar = (
             </Link>
         </li>
         </ol>
-        <button className="text-xs mr-8 flex justify-between items-center">Language Options Coming Soon!</button>
+        <button className="text-xs mr-8 flex justify-between items-center"></button>
     </nav>
 );
 
