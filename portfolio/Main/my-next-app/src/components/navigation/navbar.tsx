@@ -8,7 +8,7 @@ const navbar = (
             A/Y
         </Link>
         {/* <a className="name ml-8 text-2xl flex justify-center items-center font-bold">AY</a> */}
-        <ol id="navbarList" className="w-full mx-40  py-4 px-4 text-xl flex justify-between items-center">
+        {/* <ol id="navbarList" className="w-full mx-40  py-4 px-4 text-xl flex justify-between items-center">
         <li className="">
             <Link href="/">
                 Home
@@ -34,7 +34,7 @@ const navbar = (
                 Contact
             </Link>
         </li>
-        </ol>
+        </ol> */}
         <button className="text-xs mr-8 flex justify-between items-center"></button>
     </nav>
 );
