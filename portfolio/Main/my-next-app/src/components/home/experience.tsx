@@ -20,7 +20,7 @@ const experience = (
         </div>
 
         <p className="experience-description text-lg font-medium">
-          A description
+          
         </p>
       </li>
 
@@ -38,7 +38,7 @@ const experience = (
         </div>
 
         <p className="experience-description text-lg font-medium">
-          A description
+          
         </p>
       </li>
 
@@ -56,7 +56,7 @@ const experience = (
         </div>
 
         <p className="experience-description text-lg font-medium">
-          A description
+          
         </p>
       </li>
     </ol>

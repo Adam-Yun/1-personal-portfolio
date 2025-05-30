@@ -32,9 +32,9 @@ export default function Home() {
 
       <footer className="px-2 py-4 flex justify-center items-center">
         <a target="_blank" rel="noopener noreferrer"> &copy; 2024 Adam Yun </a>
-        <a href="" target="_blank" rel="noopener noreferrer"> Github </a>
-        <a href="" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
-        <a href="" target="_blank" rel="noopener noreferrer"> Email </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> Github </a>
+        <a href="https://www.linkedin.com/in/naelyun/" target="_blank" rel="noopener noreferrer"> LinkedIn </a>
+        <a href="mailto:naelyunn@gmail.com" rel="noopener noreferrer"> Email </a>
       </footer>
 
     </div>
