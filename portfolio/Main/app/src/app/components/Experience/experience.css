@@ -3,35 +3,72 @@
     height:min-content !important;
 }
 
+.experience-lists{
+    padding:50px;
+}
+
 .experience-list{
     width:100%;
     height:min-content;
     margin-bottom: 25px;
+
     display: flex;
+    flex-direction: column;
+    
+    color:rgb(60, 60, 60);
 }
 
 .job-period{
     padding:10px;
+    font-size: 0.65rem;
 
     border:1px solid #D9D9D9;
-    border-right: 0;
+    border-bottom: 0;
+    border-radius: 5px;
+    border-bottom-left-radius:0px ;
+    border-bottom-right-radius:0px ;
 }
 
 .job-information{
     padding:10px;
     
     border:1px solid #D9D9D9;
+    border-radius: 5px;
+    border-top-left-radius:0px ;
+    border-top-right-radius:0px ;
+    
+}
+
+.job-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.job-description{
+    margin-top:5px;
 }
 
 .techstack{
+    margin-top:15px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
 .stack{
+    padding:1px 5px;
     margin-right:10px;
+    border-radius: 2.5px;
+    color:black;
+    border:1px solid rgb(50, 50, 50);
+}
+
+.stack:hover{
+    cursor:default;
 }
 
 @media (min-width: 768px){
+    .experience-lists{
+        padding:50px 0px;
+    }
 }
