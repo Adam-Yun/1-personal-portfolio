@@ -1,0 +1,33 @@
+.nav-box{
+    display: none;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    .nav-box{
+        position: fixed;
+        top:0;
+        width:100%;
+        max-width: 800px;
+        height:50px;
+        padding:10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #F8F8FF;
+        /* border:1px solid red; */
+        z-index: 999;
+    }
+
+    .nav-lists{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .nav-lists li{
+        margin-left: 10px;
+    }
+}
