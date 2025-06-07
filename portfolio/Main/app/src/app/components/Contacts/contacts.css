@@ -1,20 +1,4 @@
-.contacts-box{
-    height: 50vh;
-    position: relative;
-    /* border:1px solid blue; */
-}
 
-.contacts-box h2{
-    position: sticky;
-    top:0px;
-    background-color: #F8F8FF;
-    border:1px solid red;
-}
 
 @media (min-width: 768px){
-    .contacts-box h2{
-        position: sticky;
-        top:50px;
-        border:1px solid red;
-    }
 }

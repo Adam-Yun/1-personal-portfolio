@@ -1,20 +1,4 @@
-.projects-box{
-    height: 50vh;
-    position: relative;
-    /* border:1px solid blue; */
-}
 
-.projects-box h2{
-    position: sticky;
-    top:0px;
-    background-color: #F8F8FF;
-    border:1px solid red;
-}
 
 @media (min-width: 768px){
-    .projects-box h2{
-        position: sticky;
-        top:50px;
-        border:1px solid red;
-    }
 }

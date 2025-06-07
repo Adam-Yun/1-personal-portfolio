@@ -1,6 +1,6 @@
 
-import Navigation from "./components/Navigation/navbar"
-import Introduction from "./components/Introduction/introduction"
+import Navigation from "./Navigation/navbar"
+import About from "./components/About/about"
 import Experience from "./components/Experience/experience";
 import Projects from "./components/Projects/projects";
 import Contacts from "./components/Contacts/contacts";
@@ -11,7 +11,7 @@ export default function Home() {
     <div className="home-box">
       <Navigation/>
       <main className="main-box">
-        <Introduction/>
+        <About/>
         <Experience/>
         <Projects/>
         <Contacts/>

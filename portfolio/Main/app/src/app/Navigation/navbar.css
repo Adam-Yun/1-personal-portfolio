@@ -10,15 +10,18 @@
         width:100%;
         max-width: 800px;
         height:50px;
-        padding:10px;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         background-color: #F8F8FF;
-        /* border:1px solid red; */
+        /* border-bottom:1px solid #D9D9D9; */
         z-index: 999;
+    }
+
+    .nav-title{
+        font-weight: bold;
     }
 
     .nav-lists{
@@ -28,6 +31,11 @@
     }
 
     .nav-lists li{
-        margin-left: 10px;
+        margin-left: 50px;
+    }
+
+    .nav-lists li a:hover, .nav-title:hover{
+        cursor: pointer;
+        color:#737373;
     }
 }
