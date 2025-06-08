@@ -1,20 +1,22 @@
 
 .experience-box{
+    width:100% !important;
     height:min-content !important;
 }
 
 .experience-lists{
-    padding:50px;
+    width:100% !important;
+    height:min-content !important;
+    padding: 25px 50px;
 }
 
 .experience-list{
     width:100%;
-    height:min-content;
+    height:100%;
     margin-bottom: 25px;
 
     display: flex;
     flex-direction: column;
-    
     color:rgb(60, 60, 60);
 }
 
@@ -46,11 +48,14 @@
 
 .job-description{
     margin-top:5px;
+    font-size:0.9rem;
 }
 
 .techstack{
     margin-top:15px;
+    padding-top:10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
     align-items: center;
 }
@@ -58,6 +63,7 @@
 .stack{
     padding:1px 5px;
     margin-right:10px;
+    margin-bottom:10px;
     border-radius: 2.5px;
     color:black;
     border:1px solid rgb(50, 50, 50);
@@ -69,6 +75,6 @@
 
 @media (min-width: 768px){
     .experience-lists{
-        padding:50px 0px;
+        padding:25px 0px;
     }
 }
