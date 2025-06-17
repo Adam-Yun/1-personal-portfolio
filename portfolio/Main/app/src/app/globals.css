@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  width:100dvw;
+  max-width:100dvw;
   height:100dvh;
 
   background: var(--background);
@@ -41,3 +41,6 @@ body {
   font-family: sans-serif,Arial, Helvetica, sans-serif;
 }
 
+/* * {
+  color: white !important;
+} */
