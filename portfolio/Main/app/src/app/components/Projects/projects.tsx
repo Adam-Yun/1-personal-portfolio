@@ -10,13 +10,15 @@ const Projects = () => {
 
           <li className="project-list">
             <div className="project-information">
-              <h2 className="project-title">AI Assistant & Analytics</h2>
-              <p className="project-description"></p>
+              <h2 className="project-title">AI Chatbot & Analytics</h2>
+              <p className="project-description">This AI chatbot is developed with a personalised LLM Model using Python and Flask, with a React-based analytics dashboard for monitoring performance. It uses MongoDB to store conversation data and runs on a Raspberry Pi for hosting.</p>
               <ol className="techstack">
                 <li className="stack">Python</li>
                 <li className="stack">React</li>
                 <li className="stack">Flask</li>
                 <li className="stack">MongoDB</li>
+                <li className="stack">Raspberry Pi</li>
+                <li className="stack">Ngrok</li>
               </ol>
             </div>
 
@@ -28,12 +30,15 @@ const Projects = () => {
           <li className="project-list">
             <div className="project-information">
               <h2 className="project-title">WitAI Chatbot</h2>
-              <p className="project-description">Build and maintain critical components used to construct Klaviyo&#39;s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.</p>
+              <p className="project-description">A Java and Spring Boot chatbot leveraging WitAI API for intent recognition. It's built on JavaScript, HTML, and CSS frontend, deployed on a Raspberry Pi.</p>
               <ol className="techstack">
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
+                <li className="stack">Java</li>
+                <li className="stack">Spring Boot</li>
+                <li className="stack">JavaScript</li>
+                <li className="stack">HTML</li>
+                <li className="stack">CSS</li>
+                <li className="stack">Raspberry Pi</li>
+                <li className="stack">Ngrok</li>
               </ol>
             </div>
 
@@ -45,12 +50,14 @@ const Projects = () => {
           <li className="project-list">
             <div className="project-information">
               <h2 className="project-title">DerbyGPT</h2>
-              <p className="project-description">Build and maintain critical components used to construct Klaviyo&#39;s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.</p>
+              <p className="project-description">A basic web app that lets users chat with an AI similar to ChatGPT. It has a text input area, displays responses, and handles conversation flow. The interface is clean and works on both desktop and mobile devices.</p>
               <ol className="techstack">
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
+                <li className="stack">TypeScript</li>
+                <li className="stack">Next.js</li>
+                <li className="stack">React</li>
+                <li className="stack">CSS</li>
+                <li className="stack">Vercel</li>
+                <li className="stack">CrewAI</li>
               </ol>
             </div>
 
@@ -62,12 +69,12 @@ const Projects = () => {
           <li className="project-list">
             <div className="project-information">
               <h2 className="project-title">Camping Site Landing Page</h2>
-              <p className="project-description">Build and maintain critical components used to construct Klaviyo&#39;s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.</p>
+              <p className="project-description">This is a landing page made for a camping business to show what they offer and help people book a spot. It's made to be responsive, loads quickly, and is easy to use.</p>
               <ol className="techstack">
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
-                <li className="stack">Python</li>
+                <li className="stack">JavaScript</li>
+                <li className="stack">HTML</li>
+                <li className="stack">CSS</li>
+                <li className="stack">Netlify</li>
               </ol>
             </div>
 
