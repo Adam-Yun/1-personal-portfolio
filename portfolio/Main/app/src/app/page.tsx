@@ -19,20 +19,23 @@ export default function Home() {
       <footer className="footer-box">
           <ol>
             <li>
-              <a href="mailto:naelaadam02@gmail.com">
+              <a href="mailto:adamyunau@gmail.com">
                 <i className="fa fa-envelope-o" ></i>
               </a>
             </li>
+
             <li>
               <a href="https://www.linkedin.com/in/naelyun/" target="_blank">
                 <i className="fa fa-linkedin"></i>
               </a>
             </li>
+
             <li>
               <a href="https://github.com/Adam-Yun" target="_blank">
                 <i className="fa fa-github"></i>
               </a>
             </li>
+
             <li>
               <a href="" target="">
                 <i className="fa fa-instagram"></i>

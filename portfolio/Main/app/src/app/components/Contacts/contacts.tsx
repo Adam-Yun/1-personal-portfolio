@@ -10,7 +10,7 @@ const Contacts = () => {
           <p className="contacts-message">I&#39;m always open to chat, and meet new people. Whether it&#39;s a question, or to just say hi, feel free to reach out!</p>
           
           {/* mailto:naelaadam02@gmail.com */}
-          <a className="contacts-mail" href="mailto:naelaadam02@gmail.com">
+          <a className="contacts-mail" href="mailto:adamyunau@gmail.com">
             <button className="contacts-mail-button">
                 Say Hello
             </button>

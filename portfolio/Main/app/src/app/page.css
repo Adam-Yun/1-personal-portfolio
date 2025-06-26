@@ -92,7 +92,7 @@ footer ol li{
     transition: box-shadow 0.1s ease-in-out;
 }
 
-footer ol li:hover{
+footer ol li:active{
     cursor: pointer;
     border:1px solid black;
     box-shadow: 2px 2px 0px black;
@@ -126,5 +126,11 @@ footer ol li:hover{
         position: absolute;
         z-index: -1;
         border:1px solid blue ;
+    }
+
+    footer ol li:hover{
+        cursor: pointer;
+        border:1px solid black;
+        box-shadow: 2px 2px 0px black;
     }
 }

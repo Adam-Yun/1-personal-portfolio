@@ -5,18 +5,44 @@ const About = () => {
     <div className="about-box">
         <h2 id="id-about" className="about-anchor">About Anchor</h2>
         <h2 className="about-title">About</h2>
-        <p className="about-name">
-          Adam Yun
-        </p>
-        <p className="about-job">
-          AI Engineer
-        </p>
-        <p className="about-description">
-          I build AI apps, large language model, and object detection models.
-        </p>
-        {/* <p className="about-description">
-          Hi I&#39;m Adam! I&#39;m all about tech and innovation. With a degree in Computer Science from San Francisco State University, I bring a mix of creativity and analytical skills to the table. As a Software Developer, I love to think outside the box and explore new ideas. I have a curiosity for diving into the latest tech trends and off the clock you&#39;ll find me tinkering with side projects because building is what I love to do.
-        </p> */}
+        <div className="about-information">
+          <p className="about-name">
+            Adam Yun
+          </p>
+
+          <p className="about-job">
+            AI Engineer
+          </p>
+          <p className="about-description">
+            I build AI apps, large language model, and object detection models.
+          </p>
+
+          <ol>
+            <li>
+              <a href="mailto:adamyunau@gmail.com">
+                <i className="fa fa-envelope-o" ></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/naelyun/" target="_blank">
+                <i className="fa fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/Adam-Yun" target="_blank">
+                <i className="fa fa-github"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="" target="">
+                <i className="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ol>
+        </div>
     </div>
   );
 };
