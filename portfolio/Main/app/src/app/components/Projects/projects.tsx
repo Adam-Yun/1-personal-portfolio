@@ -41,7 +41,7 @@ const Projects = () => {
                   <i className="fa fa-globe"></i>
                 </a>
               </div>
-              <p className="project-description">A Java and Spring Boot chatbot leveraging WitAI API for intent recognition. It's built on JavaScript, HTML, and CSS frontend, deployed on a Raspberry Pi.</p>
+              <p className="project-description">A Java and Spring Boot chatbot leveraging WitAI API for intent recognition. It&apos;s built on JavaScript, HTML, and CSS frontend, deployed on a Raspberry Pi.</p>
               <ol className="project-techstack">
                 <li className="project-stack">Java</li>
                 <li className="project-stack">Spring Boot</li>
@@ -90,7 +90,7 @@ const Projects = () => {
                   <i className="fa fa-globe"></i>
                 </a>
               </div>
-              <p className="project-description">This is a landing page made for a camping business to show what they offer and help people book a spot. It's made to be responsive, loads quickly, and is easy to use.</p>
+              <p className="project-description">This is a landing page made for a camping business to show what they offer and help people book a spot. It&apos;s made to be responsive, loads quickly, and is easy to use.</p>
               <ol className="project-techstack">
                 <li className="project-stack">JavaScript</li>
                 <li className="project-stack">HTML</li>
