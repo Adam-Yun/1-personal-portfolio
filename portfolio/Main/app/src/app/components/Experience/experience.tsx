@@ -10,7 +10,7 @@ const Experience = () => {
           <li className="experience-list">
             <p className="job-period">JUNE, 2025 - PRESENT</p>
             <div className="job-information">
-              <h3 className="job-title">Lead AI Engineer, NATT</h3>
+              <h3 className="job-title">Lead Software Engineer, NATT</h3>
               <p className="job-description">Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.</p>
               <ol className="techstack">
                 <li className="stack">

@@ -13,7 +13,7 @@ const About = () => {
             </p>
 
             <p className="about-job">
-              AI Engineer
+              Software Engineer
             </p>
             <p className="about-description">
               I build AI apps, large language model, and object detection models.
