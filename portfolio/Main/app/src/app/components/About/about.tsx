@@ -16,7 +16,7 @@ const About = () => {
               Software Engineer
             </p>
             <p className="about-description">
-              I build AI apps, large language model, and object detection models.
+              I build AI apps using large language model, and computer vision models.
             </p>
 
             <ol>

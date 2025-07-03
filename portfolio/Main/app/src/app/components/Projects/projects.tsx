@@ -17,7 +17,7 @@ const Projects = () => {
                 </a>
               </div>
               
-              <p className="project-description">This AI chatbot is developed with a personalised LLM Model using Python and Flask, with a React-based analytics dashboard for monitoring performance. It uses MongoDB to store conversation data and runs on a Raspberry Pi for hosting.</p>
+              <p className="project-description">An AI chatbot developed with a fine tuned LLM and integrated with Python and Flask. Also has a React built analytics dashboard for monitoring model and product performance. It uses MongoDB to store conversation data and runs on a Raspberry Pi and Ngrok for hosting and tunnel services.</p>
               <ol className="project-techstack">
                 <li className="project-stack">Python</li>
                 <li className="project-stack">React</li>
@@ -41,7 +41,7 @@ const Projects = () => {
                   <i className="fa fa-globe"></i>
                 </a>
               </div>
-              <p className="project-description">A Java and Spring Boot chatbot leveraging WitAI API for intent recognition. It&apos;s built on JavaScript, HTML, and CSS frontend, deployed on a Raspberry Pi.</p>
+              <p className="project-description">A Java and Spring Boot chatbot utilising WitAI API to reply users using intent recognition, creating a human-like chatting experience. It&apos;s built on vanilla web dev, and deployed on a Raspberry Pi and Ngrok for hosting and tunnel services.</p>
               <ol className="project-techstack">
                 <li className="project-stack">Java</li>
                 <li className="project-stack">Spring Boot</li>
@@ -66,7 +66,7 @@ const Projects = () => {
                   <i className="fa fa-globe"></i>
                 </a>
               </div>
-              <p className="project-description">A basic web app that lets users chat with an AI similar to ChatGPT. It has a text input area, displays responses, and handles conversation flow. The interface is clean and works on both desktop and mobile devices.</p>
+              <p className="project-description">A ChatGPT clone that lets users chat with an LLM. built with CrewAI, for fast response making use of low computing resource on user&apos;s hardware.</p>
               <ol className="project-techstack">
                 <li className="project-stack">TypeScript</li>
                 <li className="project-stack">Next.js</li>
@@ -90,7 +90,7 @@ const Projects = () => {
                   <i className="fa fa-globe"></i>
                 </a>
               </div>
-              <p className="project-description">This is a landing page made for a camping business to show what they offer and help people book a spot. It&apos;s made to be responsive, loads quickly, and is easy to use.</p>
+              <p className="project-description">A camping site landing page for a camping business, built with vanilla web dev and deployed on Netlify.</p>
               <ol className="project-techstack">
                 <li className="project-stack">JavaScript</li>
                 <li className="project-stack">HTML</li>

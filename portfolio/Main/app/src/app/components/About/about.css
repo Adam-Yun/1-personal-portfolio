@@ -91,6 +91,15 @@
         padding:10px;
     }
 
+    .about-description{
+        margin-bottom:20px;
+        margin-right: 100px;
+        padding:1px;
+        width:auto;
+        height:100%;
+        color:rgb(60, 60, 60);
+    }
+
     .about-image-box{
         margin-top: 0px;
     }
