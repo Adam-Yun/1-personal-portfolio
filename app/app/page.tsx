@@ -38,7 +38,7 @@ const DATA = {
   projects: [
     {
       title: "License Plate Extraction",
-      description: "An LLM-powered application that extracts and summarizes key information from dense PDF reports.",
+      description: "A computer vision pipeline project designed to automate license plate data capture and streamline data entry.",
       techStack: [
         "Python",
         "Flask",
@@ -47,13 +47,17 @@ const DATA = {
         "Optical Character Recognition",
         "Nvidia Jetson",
       ],
-      highlights: ["Processes 100+ page PDFs in seconds", "Implements RAG for highly accurate query responses"],
+      highlights: [
+        "Automated license plate data logging", 
+        "Minimizes human error",
+        "Boosts efficiency by 30% by eliminating paperwork and manual data entry",
+      ],
       contribution: "Lead Backend Developer",
-      images: ["/project1-a.jpg", "/project1-b.jpg"],
+      images: ["license-image-6.png","/license-image-1.png", "/license-image-2.png","license-image-3.png","license-image-4.png","license-image-5.png"],
     },
     {
       title: "AI Chatbot & Analytics",
-      description: "An LLM-powered application that extracts and summarizes key information from dense PDF reports.",
+      description: "An analytics tool for large language model chatbots that captures domain specific data, including trends, sales, popular topics, and speech patterns, to continuously improve performance and business.",
       techStack: [
         "JavaScript",
         "React", 
@@ -66,14 +70,20 @@ const DATA = {
         "Model Pipeline",
         "Raspberry Pi 5",
       ],
-      highlights: ["Processes 100+ page PDFs in seconds", "Implements RAG for highly accurate query responses"],
+      highlights: [
+        "Track trendlines for popular topics", 
+        "Analyze user demographics",
+        "Collect training data to improve existing models",
+        "Enhance understanding of human speech",
+        "Evaluate model performance",
+      ],
       contribution: "Lead Fullstack Developer",
       // Add paths to your actual images here
-      images: ["/ua-image-1.png", "/ua-image-2.png"] 
+      images: ["/ua-image-1.png", "/ua-image-2.png", "ua-image-3.png", "ua-image-4.png"] 
     },
     {
       title: "WitAI Chatbot",
-      description: "A web-based computer vision tool that identifies and tracks objects from live video feeds.",
+      description: "A large language model chatbot leveraging Meta\’s Wit.ai API for natural language processing, enabling human-like interactions and domain-specific responses while filtering out irrelevant queries.",
       techStack: [
         "JavaScript",
         "CSS3",
@@ -85,14 +95,18 @@ const DATA = {
         "Natural Language Processing",
         "Raspberry Pi 5",
       ],
-      highlights: ["Achieves 30 FPS inference in the browser", "Custom-trained YOLOv8 model for specialized tracking"],
+      highlights: [
+        "Natural, human-like speech", 
+        "Filtering irrelevant queries",
+        "Domain-specific responses"
+      ],
       contribution: "Lead Fullstack Developer",
-      images: ["/project2-a.jpg", "/project2-b.jpg"],
+      images: ["/unicon-image-1.png", "/unicon-image-2.png","unicon-image-3.png"],
       liveUrl: "https://www.ubts.academy/en/?gad_source=1&gad_campaignid=21303038567&gbraid=0AAAAA9u5AB7lxHzCyJnhrgS3_4xlNOrUT&gclid=CjwKCAjwpcTNBhA5EiwAdO1S9mURvqJS6nx7dX0UcdbB9-ZWq9Bt7gUJlqmw6UxF-y0I0kMosVpOVxoCn5EQAvD_BwE"
     },
     {
       title: "Kilaluan Cahaya Website",
-      description: "A fullstack marketing tool that generates optimized blog posts and social media copy using LLMs.",
+      description: "A corporate website designed to showcase industrial sand supply and dredging services, highlight sustainable resource management, and provide a platform for client engagement and inquiries.",
       techStack: [
         "TypeScript",
         "React",
@@ -100,9 +114,12 @@ const DATA = {
         "CSS3",
         "Vercel",
       ],
-      highlights: ["Built dynamic prompt templates", "Integrated user authentication and payment tiers"],
+      highlights: [
+        "Professional website for an industrial services company", 
+        "Responsive and user-friendly corporate website"
+      ],
       contribution: "Fullstack Developer",
-      images: ["/project3-a.jpg", "/project3-b.jpg", "/project3-c.jpg"],
+      images: ["/kilauan-image-1.png", "/kilauan-image-2.png", "/kilauan-image-3.png"],
       liveUrl: "https://15-kilauan-cahaya-landing-page.vercel.app/"
     },
   ],
