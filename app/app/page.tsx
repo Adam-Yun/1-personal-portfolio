@@ -90,6 +90,7 @@ const DATA = {
         "HTML5", 
         "Java", 
         "Spring Boot",
+        "MongoDB",
         "Meta WitAI API",
         "Cloudflare Tunnel", 
         "Natural Language Processing",
