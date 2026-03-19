@@ -32,7 +32,7 @@ const DATA = {
     "Languages": ["TypeScript", "JavaScript", "Python", "Java"],
     "Frontend": ["React", "React Native", "Next.js", "HTML5", "CSS3", "Tailwind", "Expo"],
     "Backend": ["Node.js", "Express", "Django", "Flask", "Spring Boot"],
-    "Databases": ["PostgreSQL", "MongoDB", "Redis"],
+    "Databases": ["PostgreSQL", "MongoDB"],
     "Tools & DevOps": ["Git", "Docker", "AWS", "Ngrok", "Cloudflare", "CI/CD", "Linux", "Raspberry Pi 5", "Nvidia Jetson", "Natural Language Processing", "Computer Vision"]
   },
   projects: [
