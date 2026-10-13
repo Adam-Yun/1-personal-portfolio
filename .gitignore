@@ -1,3 +1,19 @@
+# dependencies
+node_modules/
+
+# next.js
+app/.next/
+app/out/
+
+# env files
+.env
+.env.*
+!.env.example
+
+# lockfile (kept out of version control for this project)
 app/package-lock.json
-app/.next
-app/.enn
+
+# misc
+.DS_Store
+*.pem
+.vercel
