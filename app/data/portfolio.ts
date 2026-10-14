@@ -46,6 +46,12 @@ export const skills: Record<string, string[]> = {
   Frontend: ["React", "React Native", "Next.js", "HTML5", "CSS3", "Tailwind", "Expo"],
   Backend: ["Node.js", "Express", "Django", "Flask", "Spring Boot"],
   Databases: ["PostgreSQL", "MongoDB"],
+  "AI & ML": [
+    "Large Language Models",
+    "Natural Language Processing",
+    "Computer Vision",
+    "Optical Character Recognition",
+  ],
   "Tools & DevOps": [
     "Git",
     "Docker",
@@ -53,12 +59,10 @@ export const skills: Record<string, string[]> = {
     "Ngrok",
     "Cloudflare",
     "CI/CD",
+    "Automation",
     "Linux",
-    "Raspberry Pi 5",
-    "Nvidia Jetson",
-    "Natural Language Processing",
-    "Computer Vision",
   ],
+  "Hardware & Edge": ["Raspberry Pi 5", "Nvidia Jetson"],
 };
 
 export const projects: Project[] = [
@@ -164,6 +168,16 @@ export const experience: Job[] = [
       "Lead the design and development of AI-powered applications leveraging LLMs, fine-tuned models, and computer vision systems.",
       "Architect scalable backend systems, APIs, and CI/CD pipelines supporting reliable AI product deployment.",
       "Mentor engineers, set technical standards, and drive delivery of production AI solutions across the team.",
+    ],
+  },
+  {
+    company: "WSL Sdn Bhd",
+    role: "Full Stack Engineer",
+    dates: "Apr 2026 - Sep 2026",
+    achievements: [
+      "Built a sports reporting system end to end, developing both the user-facing interfaces and the backend services and APIs behind them.",
+      "Developed a game management system across the full stack, from the frontend screens through to the backend data layer.",
+      "Delivered a people management system handling participant assignments across sports, accommodation, and transport, covering both frontend and backend.",
     ],
   },
   {

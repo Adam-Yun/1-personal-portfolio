@@ -11,14 +11,14 @@ export default function Projects() {
   return (
     <section className="section" id="projects">
       <SectionHeading
-        index="02 — Projects"
-        title="Selected work"
+        index="02"
+        title="Work"
         description="A few projects that show how I approach building and shipping software."
       />
 
       <div className="grid grid-2">
         {projects.map((project) => (
-          <article key={project.title} className="card">
+          <article key={project.title} className="card" data-reveal>
             <p className="card-role">{project.contribution}</p>
             <h3>{project.title}</h3>
             <p className="card-description">{project.description}</p>

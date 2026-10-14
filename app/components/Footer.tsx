@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer-wrapper">
       <div className="container footer">
         <p>
-          © {new Date().getFullYear()} {developer.name}. Designed and built from scratch.
+          © {new Date().getFullYear()} {developer.name}. All rights reserved.
         </p>
         <div className="link-group">
           <a href={developer.github} target="_blank" rel="noreferrer">

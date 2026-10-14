@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Portfolio() {
   return (
@@ -20,6 +21,7 @@ export default function Portfolio() {
         <Contact />
       </main>
       <Footer />
+      <ScrollReveal />
     </>
   );
 }

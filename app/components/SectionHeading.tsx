@@ -6,7 +6,7 @@ type Props = {
 
 export default function SectionHeading({ index, title, description }: Props) {
   return (
-    <header className="section-header">
+    <header className="section-header" data-reveal>
       <p className="eyebrow">{index}</p>
       <h2>{title}</h2>
       {description && <p>{description}</p>}

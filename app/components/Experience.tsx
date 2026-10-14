@@ -4,11 +4,11 @@ import SectionHeading from "./SectionHeading";
 export default function Experience() {
   return (
     <section className="section" id="experience">
-      <SectionHeading index="04 — Experience" title="Where I've worked" />
+      <SectionHeading index="04" title="Experience" />
 
       <div className="timeline">
         {experience.map((job) => (
-          <article key={`${job.company}-${job.role}`} className="job">
+          <article key={`${job.company}-${job.role}`} className="job" data-reveal>
             <p className="job-dates">{job.dates}</p>
             <div>
               <h3>{job.role}</h3>

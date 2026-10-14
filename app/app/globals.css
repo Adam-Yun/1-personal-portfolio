@@ -117,6 +117,56 @@ img {
   }
 }
 
+/* ---------- Scroll reveal ---------- */
+
+:root {
+  /* Single knob for the reveal speed. */
+  --reveal-duration: 1s;
+  --reveal-distance: 16px;
+}
+
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition: opacity var(--reveal-duration) var(--ease),
+    transform var(--reveal-duration) var(--ease);
+  /* Hint the compositor so the fade does not jank on long sections. */
+  will-change: opacity, transform;
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Items in a group cascade rather than all landing at once. */
+.js #projects .card:nth-child(2),
+.js .skill-group:nth-child(2),
+.js .job:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.js #projects .card:nth-child(3),
+.js .skill-group:nth-child(3),
+.js .job:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.js #projects .card:nth-child(4),
+.js .skill-group:nth-child(4) {
+  transition-delay: 240ms;
+}
+
+/* Honour the OS setting: show everything, no movement. */
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* ---------- Layout ---------- */
 
 .container {
@@ -206,9 +256,10 @@ p + p {
 
 .eyebrow {
   display: block;
-  font-family: var(--font-code);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  /* Black Ops One is already wide; the mono tracking would pull it apart. */
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-faint);
   margin-bottom: 0.75rem;
@@ -362,7 +413,7 @@ p + p {
 }
 
 .nav-brand {
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
 }
 
 .nav-links {
@@ -373,7 +424,7 @@ p + p {
 /* Selection reads as contrast, not an underline: unselected links sit dim and
    the current one goes full brightness. */
 .nav-links a {
-  font-size: 0.75rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   padding-block: 0.25rem;
   transition: color 0.18s var(--ease);
@@ -431,10 +482,10 @@ p + p {
 }
 
 .nav-mobile a {
-  padding: 0.5rem 0;
+  padding: 0.625rem 0;
   color: var(--text-faint);
   transition: color 0.18s var(--ease);
-  font-size: 0.875rem;
+  font-size: 1.0625rem;
 }
 
 .nav-mobile a[aria-current="true"] {
@@ -673,6 +724,9 @@ p + p {
 }
 
 .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
   max-width: 100%;
   overflow-wrap: break-word;
   font-family: var(--font-code);
@@ -684,7 +738,70 @@ p + p {
   color: var(--text-muted);
 }
 
+.tag-icon {
+  flex-shrink: 0;
+  width: 0.875em;
+  height: 0.875em;
+  fill: var(--icon-light, currentColor);
+}
+
+@media (prefers-color-scheme: dark) {
+  .tag-icon {
+    fill: var(--icon-dark, currentColor);
+  }
+}
+
 /* ---------- Skills ---------- */
+
+/* Column packing rather than a grid: with 7 groups of uneven height a 3-col
+   grid forces every row to the tallest cell and leaves empty trailing cells.
+   Columns let each group take only the height it needs. */
+.skills-grid {
+  columns: 1;
+  column-gap: 2rem;
+}
+
+/* Breakpoints are set by the widest label ("Optical Character Recognition",
+   ~272px). A column narrower than that would let the tag spill into the gap,
+   so each step waits until the columns can actually hold it. */
+@media (min-width: 640px) {
+  .skills-grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .skills-grid {
+    columns: 3;
+  }
+}
+
+.skill-group {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills tags sit larger than the compact tech tags on project cards, so the
+   logos are legible rather than decorative. Scoped so .card tags are unchanged. */
+.skill-group .tag {
+  font-size: 0.8125rem;
+  gap: 0.4375rem;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 5px;
+  /* Skill labels always sit on one line - no cap, no wrapping. */
+  width: fit-content;
+  max-width: none;
+  white-space: nowrap;
+}
+
+.skill-group .tag .tag-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.skill-group .tags {
+  gap: 0.375rem;
+}
 
 .skill-group h3 {
   font-family: var(--font-code);
@@ -693,7 +810,7 @@ p + p {
   text-transform: uppercase;
   color: var(--text-faint);
   font-weight: 500;
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.625rem;
 }
 
 .skill-group .tags {
@@ -704,12 +821,21 @@ p + p {
 
 .timeline {
   display: grid;
-  gap: 3rem;
+  gap: 1.25rem;
 }
 
 .job {
   display: grid;
   gap: 0.75rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: border-color 0.2s var(--ease);
+}
+
+.job:hover {
+  border-color: var(--border-strong);
 }
 
 .job-dates {
@@ -729,7 +855,8 @@ p + p {
 @media (min-width: 768px) {
   .job {
     grid-template-columns: 10rem minmax(0, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
+    padding: 1.75rem;
   }
 }
 
