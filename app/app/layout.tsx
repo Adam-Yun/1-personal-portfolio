@@ -12,23 +12,27 @@ const heading = Black_Ops_One({
   display: "swap",
 });
 
-const title = `${developer.name} — ${developer.headline}`;
+const tabTitle = "Adam Yun Portfolio";
+
+// Social cards keep the descriptive form - a bare "Portfolio" tells a reader
+// scrolling a feed nothing about who or what it is.
+const shareTitle = `${developer.name} — ${developer.headline}`;
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title,
+  title: tabTitle,
   description: developer.summary,
   openGraph: {
-    title,
+    title: shareTitle,
     description: developer.summary,
     type: "profile",
     images: [{ url: developer.avatar }],
   },
   twitter: {
     card: "summary",
-    title,
+    title: shareTitle,
     description: developer.summary,
     images: [developer.avatar],
   },
