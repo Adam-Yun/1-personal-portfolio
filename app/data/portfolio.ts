@@ -26,6 +26,19 @@ export const developer = {
   avatar: "/profile.JPG",
 } as const;
 
+/**
+ * Rotated one at a time under the name in the hero. The joined form is what a
+ * screen reader and the reduced-motion fallback get, so no information depends
+ * on seeing the animation.
+ */
+export const headlines = [
+  "Lead Software Engineer",
+  "AI & Automation Engineer",
+  "Computer Vision Engineer",
+] as const;
+
+export const HEADLINE_INTERVAL_MS = 2000;
+
 export const about = {
   background:
     "I'm a software engineer working across web development and applied AI. Day to day that means full-stack web apps, and getting language and vision models running in production.",
@@ -164,7 +177,7 @@ export const projects: Project[] = [
 export const experience: Job[] = [
   {
     company: "Natt World",
-    role: "Lead Software Engineer | AI Engineering & Automation | Computer Vision",
+    role: "Lead Software Engineer | AI & Automation Engineer | Computer Vision",
     dates: "2025 - Present",
     achievements: [
       "Lead design and development of AI applications built on LLMs, fine-tuned models, and computer vision.",
@@ -184,7 +197,7 @@ export const experience: Job[] = [
   },
   {
     company: "Natt World",
-    role: "Software Engineer | AI Engineering & Automation | Computer Vision",
+    role: "Software Engineer | AI & Automation Engineer | Computer Vision",
     dates: "2023 - 2025",
     achievements: [
       "Fine-tuned and deployed LLMs for chatbots and semantic search, and trained vision models for automated fly count detection.",

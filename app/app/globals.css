@@ -174,6 +174,18 @@ img {
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- Layout ---------- */
 
 .container {
@@ -583,6 +595,26 @@ p + p {
   font-size: 1.125rem;
   color: var(--text-muted);
   margin-top: 0.75rem;
+  /* Reserve the tallest line so swapping roles never shifts the layout. */
+  min-height: 2lh;
+}
+
+@media (min-width: 560px) {
+  .hero-headline {
+    min-height: 1lh;
+  }
+}
+
+.hero-role {
+  display: inline-block;
+  animation: roleIn 0.45s var(--ease) both;
+}
+
+@keyframes roleIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
 }
 
 .hero-summary {
