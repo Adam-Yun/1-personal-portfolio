@@ -175,9 +175,9 @@ export const experience: Job[] = [
     role: "Full Stack Engineer",
     dates: "Apr 2026 - Sep 2026",
     achievements: [
-      "Built a sports reporting system end to end, frontend and backend.",
-      "Built a game management system across the full stack.",
-      "Built a people management system for assigning participants to sports, accommodation, and transport.",
+      "Built a sports reporting system end to end, the data model, the backend APIs, and the frontend used to capture and review results.",
+      "Developed a game management system across the full stack, from the services holding game data through to the interfaces that operate on it.",
+      "Delivered a people management system, assigning participants to sports, accommodation, and transport across backend and frontend.",
     ],
   },
   {
