@@ -1,5 +1,5 @@
 import { skills } from "@/data/portfolio";
-import { getSkillIcon } from "@/data/skill-icons";
+import { getTechIcon } from "@/data/tech-icons";
 import SectionHeading from "./SectionHeading";
 
 export default function Skills() {
@@ -17,7 +17,7 @@ export default function Skills() {
             <h3>{category}</h3>
             <div className="tags">
               {items.map((skill) => {
-                const icon = getSkillIcon(skill);
+                const icon = getTechIcon(skill);
                 return (
                   <span key={skill} className="tag">
                     {icon && (

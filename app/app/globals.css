@@ -850,6 +850,15 @@ p + p {
   padding-top: 0.25rem;
 }
 
+/* Job titles on the default sans. Black Ops One stays on the page and section
+   headings; these run long and read better in the body face. */
+.job h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
 .job-company {
   font-size: 0.875rem;
   color: var(--text-muted);

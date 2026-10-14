@@ -162,7 +162,7 @@ export const projects: Project[] = [
 export const experience: Job[] = [
   {
     company: "Natt World",
-    role: "Lead Software Engineer",
+    role: "Lead Software Engineer | AI Engineering & Automation | Computer Vision",
     dates: "2025 - Present",
     achievements: [
       "Lead design and development of AI applications built on LLMs, fine-tuned models, and computer vision.",
@@ -182,7 +182,7 @@ export const experience: Job[] = [
   },
   {
     company: "Natt World",
-    role: "Full Stack Software Engineer",
+    role: "Software Engineer | AI Engineering & Automation | Computer Vision",
     dates: "2023 - 2025",
     achievements: [
       "Fine-tuned and deployed LLMs for chatbots and semantic search, and trained vision models for automated fly count detection.",

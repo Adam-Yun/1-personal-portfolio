@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { projects, type Project } from "@/data/portfolio";
+import { getTechIcon } from "@/data/tech-icons";
 import ProjectGallery from "./ProjectGallery";
 import SectionHeading from "./SectionHeading";
 
@@ -30,11 +31,30 @@ export default function Projects() {
             </ul>
 
             <div className="tags">
-              {project.techStack.map((tech) => (
-                <span key={tech} className="tag">
-                  {tech}
-                </span>
-              ))}
+              {project.techStack.map((tech) => {
+                const icon = getTechIcon(tech);
+                return (
+                  <span key={tech} className="tag">
+                    {icon && (
+                      <svg
+                        className="tag-icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                        style={
+                          {
+                            "--icon-light": icon.colorLight,
+                            "--icon-dark": icon.colorDark,
+                          } as React.CSSProperties
+                        }
+                      >
+                        <path d={icon.path} />
+                      </svg>
+                    )}
+                    {tech}
+                  </span>
+                );
+              })}
             </div>
 
             <div className="card-footer">

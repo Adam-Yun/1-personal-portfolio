@@ -2,7 +2,7 @@ import * as simpleIcons from "simple-icons";
 
 type SimpleIcon = { title: string; path: string; hex: string };
 
-export type SkillIcon = {
+export type TechIcon = {
   title: string;
   path: string;
   /** Brand color, used as-is unless it would be invisible against the theme. */
@@ -11,11 +11,13 @@ export type SkillIcon = {
 };
 
 /**
- * Skill label -> Simple Icons slug.
+ * Tech label -> Simple Icons slug. Shared by the Skills groups and the project
+ * cards in Work, so a name only needs mapping once.
  *
  * Only brands appear here. Practices and fields (CI/CD, Natural Language
- * Processing, Computer Vision) have no logo to show, and Simple Icons carries
- * no Amazon Web Services mark, so those render as plain text tags.
+ * Processing, Computer Vision, Model Pipeline) have no logo to show, and
+ * Simple Icons carries no Amazon Web Services mark, so those render as plain
+ * text tags.
  */
 const SLUGS: Record<string, string> = {
   TypeScript: "typescript",
@@ -43,6 +45,11 @@ const SLUGS: Record<string, string> = {
   Linux: "linux",
   "Raspberry Pi 5": "raspberrypi",
   "Nvidia Jetson": "nvidia",
+
+  // Appear only in project tech stacks
+  Vercel: "vercel",
+  "Cloudflare Tunnel": "cloudflare",
+  "Meta WitAI API": "meta",
 };
 
 const icons = simpleIcons as unknown as Record<string, SimpleIcon | undefined>;
@@ -66,7 +73,7 @@ function luminance(hex: string): number {
 const TOO_DARK = 0.05;
 const TOO_LIGHT = 0.9;
 
-export function getSkillIcon(skill: string): SkillIcon | null {
+export function getTechIcon(skill: string): TechIcon | null {
   const slug = SLUGS[skill];
   if (!slug) return null;
   const icon = icons[toExportName(slug)];
