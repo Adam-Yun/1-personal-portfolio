@@ -19,6 +19,9 @@
   /* Selected nav link: pushed past --text for maximum contrast. */
   --nav-active: #000000;
 
+  --logo-tile: #fbfbfa;
+  --logo-mark: #16161a;
+
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-heading: var(--font-heading-face), Impact, "Arial Narrow Bold", sans-serif;
   --font-code: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
@@ -46,6 +49,9 @@
     --inverted-text: #0d0d0f;
 
     --nav-active: #ffffff;
+
+    --logo-tile: #0d0d0f;
+    --logo-mark: #f2f2f0;
   }
 }
 
@@ -417,7 +423,29 @@ p + p {
 }
 
 .nav-brand {
-  font-size: 1.125rem;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 7px;
+  transition: opacity 0.18s var(--ease);
+}
+
+.nav-brand:hover .logo {
+  opacity: 0.75;
+}
+
+.logo-tile {
+  fill: var(--logo-tile);
+}
+
+.logo-mark {
+  fill: var(--logo-mark);
 }
 
 .nav-links {

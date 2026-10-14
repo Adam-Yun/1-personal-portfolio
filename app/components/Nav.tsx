@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { developer, navLinks } from "@/data/portfolio";
+import Logo from "./Logo";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -46,8 +47,8 @@ export default function Nav() {
             bar instead of spilling out below it. */}
         <div className="nav-bar">
           <div className="nav-inner">
-            <a href="#hero" className="nav-brand">
-              {developer.name}
+            <a href="#hero" className="nav-brand" aria-label={`${developer.name} — back to top`}>
+              <Logo />
             </a>
 
             <div className="nav-links">
