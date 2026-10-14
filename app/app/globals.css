@@ -951,17 +951,22 @@ p + p {
 
 /* ---------- Gallery modal ---------- */
 
+/*
+ * Frameless lightbox: the image is the content, so there is no card around it.
+ * Colours here are fixed rather than themed - the overlay is always dark, so
+ * chrome drawn on top of it must always be light.
+ */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(10, 10, 12, 0.72);
-  backdrop-filter: blur(4px);
+  background-color: rgba(8, 8, 10, 0.86);
+  backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  padding: 1rem;
-  animation: fadeIn 0.18s var(--ease);
+  padding: clamp(0.75rem, 2vw, 2rem);
+  animation: fadeIn 0.2s var(--ease);
 }
 
 @keyframes fadeIn {
@@ -972,75 +977,180 @@ p + p {
 
 .modal-content {
   position: relative;
-  background-color: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.25rem;
-  max-width: 62rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 0.875rem;
+  width: 100%;
+  max-width: 68rem;
+  color: #f2f2f0;
 }
 
 .modal-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
 .modal-title {
-  font-size: 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #f2f2f0;
+}
+
+.modal-close,
+.modal-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(242, 242, 240, 0.25);
+  border-radius: 50%;
+  color: #f2f2f0;
+  cursor: pointer;
+  transition: background-color 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+
+.modal-close svg,
+.modal-nav svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.modal-close:hover,
+.modal-nav:hover {
+  background: rgba(242, 242, 240, 0.14);
+  border-color: rgba(242, 242, 240, 0.6);
 }
 
 .modal-close {
   flex-shrink: 0;
   width: 2rem;
   height: 2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 1rem;
-  line-height: 1;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: border-color 0.18s var(--ease), color 0.18s var(--ease);
 }
 
-.modal-close:hover {
-  border-color: var(--text);
-  color: var(--text);
-}
-
-.modal-image-container {
+/* The stage holds the image at its own aspect ratio; letterboxing is simply
+   the overlay showing through rather than a grey panel. */
+.modal-stage {
   position: relative;
   width: 100%;
-  height: min(60vh, 34rem);
+  height: min(74vh, 46rem);
   min-height: 12rem;
-  border-radius: var(--radius);
-  overflow: hidden;
-  background-color: color-mix(in srgb, var(--text) 5%, transparent);
 }
 
 .modal-image {
   object-fit: contain;
 }
 
-.modal-controls {
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(8, 8, 10, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.modal-nav-prev {
+  left: 0.5rem;
+}
+
+.modal-nav-next {
+  right: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .modal-nav-prev {
+    left: -3.25rem;
+  }
+  .modal-nav-next {
+    right: -3.25rem;
+  }
+}
+
+.modal-footer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .modal-counter {
   font-family: var(--font-code);
   font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(242, 242, 240, 0.6);
+}
+
+.modal-dots {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.modal-dot {
+  width: 1.5rem;
+  height: 2px;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background: rgba(242, 242, 240, 0.25);
+  cursor: pointer;
+  transition: background-color 0.18s var(--ease);
+}
+
+.modal-dot:hover {
+  background: rgba(242, 242, 240, 0.5);
+}
+
+.modal-dot[aria-current="true"] {
+  background: #f2f2f0;
+}
+
+.modal-overlay :focus-visible {
+  outline: 2px solid #f2f2f0;
+  outline-offset: 2px;
+}
+
+.contact-actions {
+  margin-top: 1.5rem;
+}
+
+/* Larger than the hero buttons: this is the page's closing call to action. */
+.btn-lg {
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding-block: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
   color: var(--text-faint);
+}
+
+.footer a {
+  color: var(--text-muted);
+  transition: color 0.18s var(--ease);
+}
+
+.footer a:hover {
+  color: var(--text);
+}
+
+.footer .link-group {
+  gap: 1.25rem;
 }

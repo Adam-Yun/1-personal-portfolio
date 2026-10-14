@@ -48,6 +48,7 @@ export const skills: Record<string, string[]> = {
   Databases: ["PostgreSQL", "MongoDB"],
   "AI & ML": [
     "Large Language Models",
+    "YOLO",
     "Natural Language Processing",
     "Computer Vision",
     "Optical Character Recognition",
@@ -73,6 +74,7 @@ export const projects: Project[] = [
     techStack: [
       "Python",
       "Flask",
+      "YOLO",
       "Model Pipeline",
       "Computer Vision",
       "Optical Character Recognition",

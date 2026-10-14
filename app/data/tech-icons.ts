@@ -45,6 +45,7 @@ const SLUGS: Record<string, string> = {
   Linux: "linux",
   "Raspberry Pi 5": "raspberrypi",
   "Nvidia Jetson": "nvidia",
+  YOLO: "yolo",
 
   // Appear only in project tech stacks
   Vercel: "vercel",

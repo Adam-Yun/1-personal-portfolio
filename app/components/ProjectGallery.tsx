@@ -91,31 +91,66 @@ export default function ProjectGallery({ project, onClose }: Props) {
             onClick={onClose}
             aria-label="Close preview"
           >
-            ✕
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
           </button>
         </div>
 
-        <div className="modal-image-container">
+        <div className="modal-stage">
           <Image
             key={project.images[index]}
             src={project.images[index]}
             alt={`${project.title} preview ${index + 1} of ${count}`}
             fill
-            sizes="(min-width: 1000px) 1000px, 100vw"
+            sizes="(min-width: 1100px) 1100px, 100vw"
             className="modal-image"
           />
+
+          {count > 1 && (
+            <>
+              <button
+                type="button"
+                className="modal-nav modal-nav-prev"
+                onClick={prev}
+                aria-label="Previous image"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M15 5l-7 7 7 7" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                className="modal-nav modal-nav-next"
+                onClick={next}
+                aria-label="Next image"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </>
+          )}
         </div>
 
-        <div className="modal-controls">
-          <button type="button" className="btn btn-sm" onClick={prev} disabled={count < 2}>
-            ← Prev
-          </button>
-          <span className="modal-counter" aria-live="polite">
-            {index + 1} / {count}
-          </span>
-          <button type="button" className="btn btn-sm" onClick={next} disabled={count < 2}>
-            Next →
-          </button>
+        <div className="modal-footer">
+          <p className="modal-counter" aria-live="polite">
+            {String(index + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
+          </p>
+          {count > 1 && (
+            <div className="modal-dots">
+              {project.images.map((src, i) => (
+                <button
+                  key={src}
+                  type="button"
+                  className="modal-dot"
+                  aria-label={`Go to image ${i + 1}`}
+                  aria-current={i === index ? "true" : undefined}
+                  onClick={() => setIndex(i)}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
