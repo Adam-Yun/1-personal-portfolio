@@ -13,7 +13,7 @@ export default function Projects() {
       <SectionHeading
         index="02"
         title="Work"
-        description="A few projects that show how I approach building and shipping software."
+        description="A few things I've built and shipped."
       />
 
       <div className="grid grid-2">

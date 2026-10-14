@@ -19,7 +19,7 @@ export const developer = {
   name: "Adam Yun",
   headline: "Lead Software Engineer",
   summary:
-    "I build websites, web applications, and software powered by AI. My work focuses on the practical integration of large language models and computer vision into scalable web products.",
+    "I build web apps and AI-powered software. Mostly putting language and vision models to work in products people actually use.",
   github: "https://github.com/Adam-Yun",
   linkedin: "https://www.linkedin.com/in/naelyun/",
   email: "adamyunau@gmail.com",
@@ -28,7 +28,7 @@ export const developer = {
 
 export const about = {
   background:
-    "My background is in software engineering, with a focus on web development and applied artificial intelligence. I build responsive websites, full-stack web applications, and AI tools. My daily work involves writing clean code for the web and successfully integrating large language models and computer vision models into production environments.",
+    "I'm a software engineer working across web development and applied AI. Day to day that means full-stack web apps, and getting language and vision models running in production.",
   interests: [
     "Fullstack Development",
     "Scalable Architectures",
@@ -38,7 +38,7 @@ export const about = {
     "API Design & Integration",
   ],
   goals:
-    "My goal is to build reliable, efficient software that solves actual problems. Whether it is a standard web application or an AI-powered tool, I focus on delivering functional, user-friendly products.",
+    "I care about software that solves a real problem and holds up once it ships. Web app or AI tool, the bar is the same.",
 };
 
 export const skills: Record<string, string[]> = {
@@ -69,7 +69,7 @@ export const projects: Project[] = [
   {
     title: "License Plate Extraction",
     description:
-      "A computer vision pipeline project designed to automate license plate data capture and streamline data entry.",
+      "A computer vision pipeline that reads license plates automatically, so nobody has to type them in.",
     techStack: [
       "Python",
       "Flask",
@@ -96,7 +96,7 @@ export const projects: Project[] = [
   {
     title: "AI Chatbot & Analytics",
     description:
-      "An analytics tool for large language model chatbots that captures domain specific data, including trends, sales, popular topics, and speech patterns, to continuously improve performance and business.",
+      "Analytics for LLM chatbots. Tracks topics, trends, sales and speech patterns, then feeds that back into the models.",
     techStack: [
       "JavaScript",
       "React",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
   {
     title: "WitAI Chatbot",
     description:
-      "A large language model chatbot leveraging Meta's Wit.ai API for natural language processing, enabling human-like interactions and domain-specific responses while filtering out irrelevant queries.",
+      "A chatbot built on Meta's Wit.ai. Answers in natural language, stays on topic, and filters out questions it has no business answering.",
     techStack: [
       "JavaScript",
       "CSS3",
@@ -147,7 +147,7 @@ export const projects: Project[] = [
   {
     title: "Kilaluan Cahaya Website",
     description:
-      "A corporate website designed to showcase industrial sand supply and dredging services, highlight sustainable resource management, and provide a platform for client engagement and inquiries.",
+      "A corporate site for an industrial sand supply and dredging company, built to bring in client enquiries.",
     techStack: ["TypeScript", "React", "Next.js", "CSS3", "Vercel"],
     highlights: [
       "Professional website for an industrial services company",
@@ -165,9 +165,9 @@ export const experience: Job[] = [
     role: "Lead Software Engineer",
     dates: "2025 - Present",
     achievements: [
-      "Lead the design and development of AI-powered applications leveraging LLMs, fine-tuned models, and computer vision systems.",
-      "Architect scalable backend systems, APIs, and CI/CD pipelines supporting reliable AI product deployment.",
-      "Mentor engineers, set technical standards, and drive delivery of production AI solutions across the team.",
+      "Lead design and development of AI applications built on LLMs, fine-tuned models, and computer vision.",
+      "Architect the backend systems, APIs, and CI/CD pipelines these products ship on.",
+      "Mentor engineers, set technical standards, and drive delivery across the team.",
     ],
   },
   {
@@ -175,9 +175,9 @@ export const experience: Job[] = [
     role: "Full Stack Engineer",
     dates: "Apr 2026 - Sep 2026",
     achievements: [
-      "Built a sports reporting system end to end, developing both the user-facing interfaces and the backend services and APIs behind them.",
-      "Developed a game management system across the full stack, from the frontend screens through to the backend data layer.",
-      "Delivered a people management system handling participant assignments across sports, accommodation, and transport, covering both frontend and backend.",
+      "Built a sports reporting system end to end, frontend and backend.",
+      "Built a game management system across the full stack.",
+      "Built a people management system for assigning participants to sports, accommodation, and transport.",
     ],
   },
   {
@@ -185,9 +185,9 @@ export const experience: Job[] = [
     role: "Full Stack Software Engineer",
     dates: "2023 - 2025",
     achievements: [
-      "Fine-tuned and deployed LLMs for chatbots and semantic search, and trained computer vision models for automated fly count detection.",
-      "Built logistics automation systems for driver assignments and job scheduling, and integrated AI chatbots to improve customer inquiry handling.",
-      "Deployed and maintained AI systems on Raspberry Pi devices, using Ngrok for tunneling and GitHub Actions for CI/CD automation.",
+      "Fine-tuned and deployed LLMs for chatbots and semantic search, and trained vision models for automated fly count detection.",
+      "Built logistics automation for driver assignment and job scheduling, plus AI chatbots for customer enquiries.",
+      "Deployed and maintained AI systems on Raspberry Pi, with Ngrok tunneling and GitHub Actions for CI/CD.",
     ],
   },
 ];

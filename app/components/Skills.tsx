@@ -8,7 +8,7 @@ export default function Skills() {
       <SectionHeading
         index="03"
         title="Skills"
-        description="The languages, frameworks, and infrastructure I reach for day to day."
+        description="The tools I build with."
       />
 
       <div className="skills-grid">
